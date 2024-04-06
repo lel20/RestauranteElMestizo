@@ -2,6 +2,7 @@
 import "./components.css";
 //Iconos
 import { FiMenu } from "react-icons/fi";
+import Logo from '../assets/logoMestizo.png'
 //Rutas
 import { Link } from 'react-router-dom';
 //Hooks Estados
@@ -15,9 +16,9 @@ export const NavBar = () => {
     <nav className='nav md:h-[6rem]'>
       <div className="container contenedor">
         <div className="contenedor-cuerpo ">
-          <div className=" flex  flex-col gap-4 w-[100px] h-[100px] rounded-full bg-red-600 justify-center items-center">
-            <img src="" alt="LogoMestizo" />
-            <h2>El Mestizo</h2>
+          <div className=" flex  gap-4  justify-center items-center">
+            <img src={Logo} alt="LogoMestizo" className="w-[90px]" />
+            <h2 className="title md:text-[3rem] ">El Mestizo</h2>
           </div>
           <div className="opciones-menu md:flex gap-3 ">
             <Link to="/">Inicio</Link>
@@ -29,10 +30,10 @@ export const NavBar = () => {
         </div>
         {menu &&(
           <div className='opciones-menu1 md:hidden'>
-            <Link className='opciones' to="/">Inicio</Link>
-            <Link className='opciones' to="/filosofia">Fisolofia</Link>
-            <Link className='opciones' to="/menu">Menu</Link>
-            <Link className='opciones' to="/contacto">Contacto</Link>
+            <a className='opciones' href="/">Inicio</a>
+            <a className='opciones' href="/filosofia">Fisolofia</a>
+            <a className='opciones' href="/menu">Menu</a>
+            <a className='opciones' href="/contacto">Contacto</a>
           </div>
         )}  
       </div>

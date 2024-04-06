@@ -1,0 +1,53 @@
+.principal-Home{
+  height: 100vh;
+  width: 100%;
+}
+.section1-Home{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding: 2rem;
+ min-height: 30rem;
+}
+.title1-Home{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.title2-Home{
+  font-family: "Merienda", cursive;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: rgb(255, 152, 16);
+}
+.description-Home{
+  font-size: 1.2rem;
+  color: rgb(51, 51, 51);
+}
+.boton-Home{
+  width: 100%;
+  margin-top: 2rem;
+  border: 1px solid rgb(0, 0, 0);
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Section 2 */
+.section2-Home{
+  min-height: 20rem;
+  margin: auto;
+}
+.contenedor-S2{
+  display: flex;
+  justify-content: space-around;
+}
+.title-S2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-family: "Great Vibes", cursive;
+  background-color:  rgb(254, 155, 25);
+  height: 4.5rem;
+}

@@ -1,36 +1,42 @@
-.nav{
+.nav {
   position: sticky;
   top: 0;
   width: 100%;
+  min-height: 7rem;
   padding: 1rem;
   z-index: 10;
+  background-color: white;
 }
-.contenedor{
-  margin: auto;
-  justify-content: space-between;
-  align-items: center;
- 
-}
-.contenedor-cuerpo{
+.contenedor-cuerpo {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
-.opciones-menu{
+.opciones-menu {
   display: none;
 }
-.opciones-menu1{
+.opciones-menu1 {
   width: 100%;
-  
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
 }
-.opciones{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.opciones {
+  width: 100%;
   height: 2rem;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.opciones:hover{
-background-color: orangered;
+.opciones:hover {
+  background-color: orangered;
+}
+.title {
+  font-family: "Merienda", cursive;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: rgb(64, 16, 16);
+  text-transform: uppercase;
 }
