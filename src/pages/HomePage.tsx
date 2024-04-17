@@ -6,7 +6,7 @@ export const HomePage = () => {
   return (
     <div className="principal-Home">
       <section className="section1-Home">
-        <div className="w-full">
+        <div className="contenedor-Home">
           <h2 className="title1-Home md:text-[3rem] md:text-center">
             Bienvenido a Nuestro Restaurante
           </h2>
@@ -15,7 +15,7 @@ export const HomePage = () => {
           </h1>
           <p className="description-Home md:text-center">
             Saborea la auténtica cocina latina tradicional en un ambiente
-            acogedor, vibrante y buena música
+            acogedor, vibrante y con buena música
           </p>
         </div>
         <Link className="boton-Home md:w-[18rem]" to="/menu">
@@ -30,8 +30,6 @@ export const HomePage = () => {
           <CardMenus />
           <div></div>
         </div>
-       
-
       </section>
     </div>
   );
