@@ -4,6 +4,7 @@ import {NavBar} from './components/NavBar'
 import { Contacto } from "./pages/Contacto";
 import { Menu } from "./pages/Menu";
 import { Filosofia } from "./pages/Filosofia";
+import { Fotter } from "./components/Fotter";
 function App() {
   return (
       <Router>
@@ -14,6 +15,7 @@ function App() {
           <Route path="/filosofia" element={<Filosofia />} />
           <Route path="/contacto" element={<Contacto />} />
         </Routes>
+        <Fotter />
       </Router>
   );
 }
