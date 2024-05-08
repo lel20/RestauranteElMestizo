@@ -1,7 +1,7 @@
 import Carne from "../assets/carne.png";
 export const CardMenus = () => {
   return (
-    <div className="w-full flex flex-col gap-4">
+    <div className="w-full flex flex-col gap-4 justify-center items-center">
       <img className="w-[35rem] h-auto" src={Carne} alt="" />
       <div className="w-full my-8">
         <div className="w-full flex flex-col px-4 my-4 gap-y-4">

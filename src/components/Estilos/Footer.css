@@ -1,0 +1,60 @@
+.section-Footer{
+  background-color:  rgb(254, 155, 25);
+  color: rgb(30, 29, 29);
+  min-height: 10rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  width: 100%;
+}
+.footer-contenedor{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.Footer-h2{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.hour,
+.location,
+.social{
+  margin-bottom: 2rem;
+  width: 100%;
+
+}
+.location-body,
+.social-Body,
+.group{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.location-Description, 
+.hour-Description,
+.social-Description{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+
+}
+.addres{
+  display: flex;
+  flex-direction: column;
+
+}
+.divisor{
+  margin-top: 1rem;
+  border: 1px solid rgb(0, 0, 0);
+}
+.author{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-left: 2rem;
+}

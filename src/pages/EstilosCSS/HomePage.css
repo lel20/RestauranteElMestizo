@@ -1,5 +1,4 @@
 .principal-Home{
-  
   width: 100%;
 }
 .section1-Home{
@@ -57,11 +56,16 @@
 /* Section 2 */
 .section2-Home{
   min-height: 20rem;
-  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .contenedor-S2{
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  margin-top: 2rem;
+  
+ 
 }
 .title-S2{
   display: flex;
@@ -71,4 +75,19 @@
   font-family: "Great Vibes", cursive;
   background-color:  rgb(254, 155, 25);
   height: 4.5rem;
+}
+/* Secction 3 */
+.section3-Home{
+  margin-top: 4rem;
+  min-height: 20rem;
+  padding: 2rem;
+
+}
+.section3-Title{
+  font-size: 1.5rem;
+}
+.section3-description {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
 }
