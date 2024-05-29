@@ -8,18 +8,14 @@ import { Footer } from "./components/Footer";
 function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
-        <div className="flex-1">
-          <NavBar />
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/menu" element={<Menu />} />
-            <Route path="/filosofia" element={<Filosofia />} />
-            <Route path="/contacto" element={<Contacto />} />
-          </Routes>
-        </div>
-        <Footer />
-      </div>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/filosofia" element={<Filosofia />} />
+        <Route path="/contacto" element={<Contacto />} />
+      </Routes>
+      <Footer />
     </Router>
   );
 }

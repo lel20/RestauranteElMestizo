@@ -2,9 +2,11 @@
 import { Link } from "react-router-dom";
 import "./EstilosCSS/HomePage.css";
 import { CardMenus } from "../components/CardMenus";
+import Chef from "../assets/chef.png"
 export const HomePage = () => {
   return (
     <div className="principal-Home">
+      {/* ------------------------------------------------------------------ */}
       <section className="section1-Home">
         <div className="contenedor-Home">
           <h2 className="title1-Home md:text-[3rem] md:text-center">
@@ -22,7 +24,7 @@ export const HomePage = () => {
           Explora Los Platos a la Carta
         </Link>
       </section>
-
+      {/* ------------------------------------------------------------ */}
       <section className="section2-Home">
         <h1 className="title-S2">Menu del Día</h1>
         <div className=" contenedor-S2">
@@ -30,6 +32,21 @@ export const HomePage = () => {
           <CardMenus />
         </div>
       </section>
+      {/* -------------------------------------------------------------- */}
+      <section className="w-full bg-black/90">
+        
+        <div className=" container m-auto flex">
+          <div className="flex  flex-col">
+            <h2>Nuestras Filosofía</h2>
+            <p className="flex-1">"cocinamos con amor para alimentar tu alma"</p>
+          </div>
+          
+          <img className="w-[30%]" src={Chef} alt="" />
+        </div>
+
+
+      </section>
+      {/* -------------------------------------------------------------- */}
       <section className="section3-Home w-full container m-auto">
         <h2 className="section3-Title">Sobre Nosotros</h2>
         <p className="section3-description">
@@ -59,7 +76,6 @@ export const HomePage = () => {
           </p>
         </p>
       </section>
-      
     </div>
   );
 };
