@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import "./EstilosCSS/HomePage.css";
 import { CardMenus } from "../components/CardMenus";
-import Chef from "../assets/chef.png"
+import Chef from "../assets/chef.png";
 export const HomePage = () => {
   return (
     <div className="principal-Home">
@@ -33,18 +33,15 @@ export const HomePage = () => {
         </div>
       </section>
       {/* -------------------------------------------------------------- */}
-      <section className="w-full bg-black/90">
-        
-        <div className=" container m-auto flex">
-          <div className="flex  flex-col">
-            <h2>Nuestras Filosofía</h2>
-            <p className="flex-1">"cocinamos con amor para alimentar tu alma"</p>
+      <section className="filosofia w-full bg-black/90">
+        <div className="contenedor-filosofia md:grid-cols-2 container m-auto">
+          <div className=" w-[80%]">
+            <h2 className="filosofia-titulo">Nuestra Filosofía</h2>
+            <p className="parrafo1-filosofia">"Cocinamos con amor para alimentar tu alma"</p>
+            <p className="parrafo2-filosofia">En nuestro restaurante , cada plato es una expresión de amor y dedicación. Creemos que la comida  tiene el poder de nutrir no solo el cuerpo, si no tambien el espiritu."</p>
           </div>
-          
-          <img className="w-[30%]" src={Chef} alt="" />
+          <img className="md:w-[80%]" src={Chef} alt="" />
         </div>
-
-
       </section>
       {/* -------------------------------------------------------------- */}
       <section className="section3-Home w-full container m-auto">
