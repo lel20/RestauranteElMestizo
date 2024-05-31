@@ -37,41 +37,55 @@ export const HomePage = () => {
         <div className="contenedor-filosofia md:grid-cols-2 container m-auto">
           <div className=" w-[80%]">
             <h2 className="filosofia-titulo">Nuestra Filosofía</h2>
-            <p className="parrafo1-filosofia">"Cocinamos con amor para alimentar tu alma"</p>
-            <p className="parrafo2-filosofia">En nuestro restaurante , cada plato es una expresión de amor y dedicación. Creemos que la comida  tiene el poder de nutrir no solo el cuerpo, si no tambien el espiritu."</p>
+            <p className="parrafo1-filosofia">
+              "Cocinamos con amor para alimentar tu alma"
+            </p>
+            <p className="parrafo2-filosofia">
+              En nuestro restaurante , cada plato es una expresión de amor y
+              dedicación. Creemos que la comida tiene el poder de nutrir no solo
+              el cuerpo, si no tambien el espiritu."
+            </p>
           </div>
           <img className="md:w-[80%]" src={Chef} alt="" />
         </div>
       </section>
       {/* -------------------------------------------------------------- */}
-      <section className="section3-Home w-full container m-auto">
-        <h2 className="section3-Title">Sobre Nosotros</h2>
-        <p className="section3-description">
-          El térmio MESTIZO fue aplicado por españa en el siglo XVI para
-          denominar a unas de las "castas". Proviene del latín Mixticius y
-          resulta de la combinacion de un Blanco Europeo y un Aborigene
-          Americano{" "}
-        </p>
-        <p className="section3-description">
-          El MESTIZO es más que un restaurante; es una experiencia gastronómica
-          que te transportará a los vibrantes sabores y colores de América
-          Latina. En El MESTIZO, nos enorgullecemos de ofrecer una auténtica
-          selección de platos latinos cuidadosamente elaborados, cada uno
-          inspirado en las tradiciones culinarias únicas de países como
-          Colombia, Venezuela, Ecuador y mucho más.
+      <section className="nosotros w-full container m-auto">
+        <div>
+          <h2 className="nosotros-Title">Sobre Nosotros</h2>
+          <img src="" alt="" />
+          
+        </div>
+        <div>
           <p className="section3-description">
-            En El Mestizo, la pasión por la comida se fusiona con el arte de la
-            hospitalidad. Nuestro equipo está comprometido en brindarte una
-            experiencia gastronómica excepcional, desde el momento en que cruzas
-            nuestras puertas hasta el último sorbo de tu bebida.
+            El térmio MESTIZO fue aplicado por españa en el siglo XVI para
+            denominar a unas de las "castas". Proviene del latín Mixticius y
+            resulta de la combinacion de un Blanco Europeo y un Aborigene
+            Americano{" "}
           </p>
           <p className="section3-description">
-            Ya sea que estés celebrando una ocasión especial, disfrutando de una
-            comida en familia o simplemente buscando una escapada culinaria,
-            estamos aquí para hacerte sentir como en casa. ¡Ven y únete a
-            nosotros en este viaje culinario por América Latina en El Mestizo!
-          </p>
-        </p>
+            El MESTIZO es más que un restaurante; es una experiencia
+            gastronómica que te transportará a los vibrantes sabores y colores
+            de América Latina. En El MESTIZO, nos enorgullecemos de ofrecer una
+            auténtica selección de platos latinos cuidadosamente elaborados,
+            cada uno inspirado en las tradiciones culinarias únicas de países
+            como Colombia, Venezuela, Ecuador y mucho más.
+            </p>
+            <p className="section3-description">
+              En El Mestizo, la pasión por la comida se fusiona con el arte de
+              la hospitalidad. Nuestro equipo está comprometido en brindarte una
+              experiencia gastronómica excepcional, desde el momento en que
+              cruzas nuestras puertas hasta el último sorbo de tu bebida.
+            </p>
+            <p className="section3-description">
+              Ya sea que estés celebrando una ocasión especial, disfrutando de
+              una comida en familia o simplemente buscando una escapada
+              culinaria, estamos aquí para hacerte sentir como en casa. ¡Ven y
+              únete a nosotros en este viaje culinario por América Latina en El
+              Mestizo!
+            </p>
+          
+        </div>
       </section>
     </div>
   );

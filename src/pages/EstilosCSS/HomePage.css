@@ -76,7 +76,7 @@
   background-color:  rgb(254, 155, 25);
   height: 4.5rem;
 }
-
+/* ------------------------------------------------FILOSOFÍA */
 .filosofia{
   width: 100%;
   min-height: 10rem;
@@ -112,14 +112,18 @@
   
 }
 /* Secction 3 */
-.section3-Home{
+.nosotros{
+  width: 100%;
   margin-top: 4rem;
-  min-height: 20rem;
-  padding: 2rem;
+  min-height: 10rem;
+  display: flex;
+  flex-direction: column;
 
 }
-.section3-Title{
-  font-size: 1.5rem;
+.nosotros-Title{
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 2rem;
 }
 .section3-description {
   margin-top: 2rem;
