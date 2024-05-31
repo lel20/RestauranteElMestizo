@@ -33,8 +33,8 @@ export const HomePage = () => {
         </div>
       </section>
       {/* -------------------------------------------------------------- */}
-      <section className="filosofia w-full bg-black/90">
-        <div className="contenedor-filosofia md:grid-cols-2 container m-auto">
+      <section className="filosofia bg-black/90">
+        <div className="contenedor-filosofia md:grid-cols-2 container ms-auto">
           <div className=" w-[80%]">
             <h2 className="filosofia-titulo">Nuestra Filosofía</h2>
             <p className="parrafo1-filosofia">
@@ -50,8 +50,8 @@ export const HomePage = () => {
         </div>
       </section>
       {/* -------------------------------------------------------------- */}
-      <section className="nosotros w-full container m-auto">
-        <div>
+      <section className="nosotros">
+        <div className="cc container ms-auto">
           <h2 className="nosotros-Title">Sobre Nosotros</h2>
           <img src="" alt="" />
           
