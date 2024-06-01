@@ -34,8 +34,8 @@ export const HomePage = () => {
       </section>
       {/* -------------------------------------------------------------- */}
       <section className="filosofia bg-black/90">
-        <div className="contenedor-filosofia md:grid-cols-2 container ms-auto">
-          <div className=" w-[80%]">
+        <div className="contenedor-filosofia md:grid-cols-2 container m-auto">
+          <div className=" w-[80%] flex flex-col justify-center">
             <h2 className="filosofia-titulo">Nuestra Filosofía</h2>
             <p className="parrafo1-filosofia">
               "Cocinamos con amor para alimentar tu alma"
@@ -51,25 +51,26 @@ export const HomePage = () => {
       </section>
       {/* -------------------------------------------------------------- */}
       <section className="nosotros">
-        <div className="cc container ms-auto">
-          <h2 className="nosotros-Title">Sobre Nosotros</h2>
-          <img src="" alt="" />
-          
-        </div>
-        <div>
-          <p className="section3-description">
-            El térmio MESTIZO fue aplicado por españa en el siglo XVI para
-            denominar a unas de las "castas". Proviene del latín Mixticius y
-            resulta de la combinacion de un Blanco Europeo y un Aborigene
-            Americano{" "}
-          </p>
-          <p className="section3-description">
-            El MESTIZO es más que un restaurante; es una experiencia
-            gastronómica que te transportará a los vibrantes sabores y colores
-            de América Latina. En El MESTIZO, nos enorgullecemos de ofrecer una
-            auténtica selección de platos latinos cuidadosamente elaborados,
-            cada uno inspirado en las tradiciones culinarias únicas de países
-            como Colombia, Venezuela, Ecuador y mucho más.
+        <div className="contenedor-nosotros md:grid-cols-2 container m-auto">
+          <div>
+            <h2 className="nosotros-Title">Sobre Nosotros</h2>
+            <img src="" alt="mestizo" />
+          </div>
+
+          <div>
+            <p className="section3-description">
+              El térmio MESTIZO fue aplicado por españa en el siglo XVI para
+              denominar a unas de las "castas". Proviene del latín Mixticius y
+              resulta de la combinacion de un Blanco Europeo y un Aborigene
+              Americano{" "}
+            </p>
+            <p className="section3-description">
+              El MESTIZO es más que un restaurante; es una experiencia
+              gastronómica que te transportará a los vibrantes sabores y colores
+              de América Latina. En El MESTIZO, nos enorgullecemos de ofrecer
+              una auténtica selección de platos latinos cuidadosamente
+              elaborados, cada uno inspirado en las tradiciones culinarias
+              únicas de países como Colombia, Venezuela, Ecuador y mucho más.
             </p>
             <p className="section3-description">
               En El Mestizo, la pasión por la comida se fusiona con el arte de
@@ -84,7 +85,7 @@ export const HomePage = () => {
               únete a nosotros en este viaje culinario por América Latina en El
               Mestizo!
             </p>
-          
+          </div>
         </div>
       </section>
     </div>

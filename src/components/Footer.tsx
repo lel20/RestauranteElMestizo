@@ -15,30 +15,7 @@ export const Footer = () => {
               <TbClockHour9Filled />
               <span>Lunes 10:00 am - 22:00 pm</span>
             </p>
-            <p className="hour-Description">
-              <TbClockHour9Filled />
-              <span>Martes 10:00 am - 22:00 pm</span>
-            </p>
-            <p className="hour-Description">
-              <TbClockHour9Filled />
-              <span>Miercoles 10:00 am - 22:00 pm</span>
-            </p>
-            <p className="hour-Description">
-              <TbClockHour9Filled />
-              <span>Jueves 10:00 am - 22:00 pm</span>
-            </p>
-            <p className="hour-Description">
-              <TbClockHour9Filled />
-              <span>Viernes 10:00 am - 22:00 pm</span>
-            </p>
-            <p className="hour-Description">
-              <TbClockHour9Filled />
-              <span>Sábado 10:00 am - 22:00 pm</span>
-            </p>
-            <p className="hour-Description">
-              <TbClockHour9Filled />
-              <span>Domingo 10:00 am - 22:00 pm</span>
-            </p>
+            
           </div>
         </div>
         {/* ---------------------------------------------------------- */}
