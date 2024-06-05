@@ -1,7 +1,6 @@
 //Estilos HomePage
 import { Link } from "react-router-dom";
 import "./EstilosCSS/HomePage.css";
-import { CardMenus } from "../components/CardMenus";
 import Chef from "../assets/chef.png";
 export const HomePage = () => {
   return (
@@ -25,11 +24,22 @@ export const HomePage = () => {
         </Link>
       </section>
       {/* ------------------------------------------------------------ */}
-      <section className="section2-Home">
-        <h1 className="title-S2">Menu del Día</h1>
-        <div className=" contenedor-S2">
-          <CardMenus />
-          <CardMenus />
+      <section className="carta">
+        <div className="contenedor-carta container ">
+          <a className="opciones-card" href="">Raciones</a>
+          <a className="opciones-card" href="">Entrantes</a>
+          <a className="opciones-card" href="">Caldos y Sopas</a>
+          <a className="opciones-card" href="">Ensaladas</a>
+          <a className="opciones-card" href="">Platos Típicos</a>
+          <a className="opciones-card" href="">Batidos y Jugos</a>
+          <a className="opciones-card" href="">Resfrescos</a>
+          <a className="opciones-card" href="">Resfrescos Importados</a>
+          <a className="opciones-card" href="">Tercios</a>
+          <a className="opciones-card" href="">Jarras</a>
+          <a className="opciones-card opcion-11" href="">
+            
+            <span className="absolute">Vinos</span>
+          </a>
         </div>
       </section>
       {/* -------------------------------------------------------------- */}

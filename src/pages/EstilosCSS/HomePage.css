@@ -54,29 +54,36 @@
   color: white;
 }
 /* Section 2 */
-.section2-Home{
-  min-height: 20rem;
+.carta{
   width: 100%;
   display: flex;
   flex-direction: column;
-}
-.contenedor-S2{
-  width: 100%;
-  display: flex;
-  margin-top: 2rem;
-  
- 
-}
-.title-S2{
-  display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3rem;
-  font-family: monospace;
-  font-weight: 700;
-  background-color:  rgb(254, 155, 25);
-  height: 4.5rem;
-  color: rgb(17, 17, 17);
+}
+.contenedor-carta{
+  width: 100%;
+  display: grid;
+  grid-template-columns:repeat(auto-fill, minmax(187px, 1fr));
+  gap: 25px;
+  margin-top: 6rem;
+  padding: 2rem 1rem 4rem 1rem;
+  
+}
+.opciones-card{
+  display: flex;
+  height: 10rem;
+  background-color: brown;
+  transition: transform 0.3s ease-in-out;
+}
+.opciones-card:hover{
+  transform: scale(.9);
+}
+.opcion-11{
+  background-image: url(../../assets/vinos.png);
+  background-repeat: no-repeat;
+  background-position:top;
+  background-size: cover;
 }
 /* ------------------------------------------------FILOSOFÍA */
 .filosofia{
@@ -96,6 +103,7 @@
   padding: 2rem 1rem 0 1rem;
  
 }
+
 .filosofia-titulo{
   font-family: monospace;
   font-weight: 700;
