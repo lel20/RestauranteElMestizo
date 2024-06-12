@@ -2,6 +2,10 @@
 import { Link } from "react-router-dom";
 import "./EstilosCSS/HomePage.css";
 import Chef from "../assets/chef.png";
+import Galeria1 from "../assets/galeria1.jpg"
+import Galeria2 from "../assets/galeria2.jpg"
+import Galeria3 from "../assets/galeria3.jpg"
+import Galeria4 from "../assets/galeria4.png"
 export const HomePage = () => {
   return (
     <div className="principal-Home">
@@ -26,11 +30,11 @@ export const HomePage = () => {
       {/* ------------------------------------------------------------ */}
       <section className="carta">
         <div className="contenedor-carta container ">
-          <a className="opciones-card" href="">Raciones</a>
-          <a className="opciones-card" href="">Entrantes</a>
-          <a className="opciones-card" href="">Caldos y Sopas</a>
-          <a className="opciones-card" href="">Ensaladas</a>
-          <a className="opciones-card" href="">Platos Típicos</a>
+          <a className="opciones-card opcion-1" href="">Raciones</a>
+          <a className="opciones-card opcion-2" href="">Entrantes</a>
+          <a className="opciones-card opcion-3" href="">Caldos y Sopas</a>
+          <a className="opciones-card opcion-4" href="">Ensaladas</a>
+          <a className="opciones-card opcion-5" href="">Platos Típicos</a>
           <a className="opciones-card" href="">Batidos y Jugos</a>
           <a className="opciones-card" href="">Resfrescos</a>
           <a className="opciones-card" href="">Resfrescos Importados</a>
@@ -96,6 +100,14 @@ export const HomePage = () => {
               Mestizo!
             </p>
           </div>
+        </div>
+      </section>
+      <section className="galeria">
+        <div className="contenedor-galeria container">
+          <img className="galeria-imagen md:w-full"  src={Galeria1} alt="" />
+          <img className="galeria-imagen md:w-full" src={Galeria2} alt="" />
+          <img className="galeria-imagen md:w-full" src={Galeria3} alt="" />
+          <img className="galeria-imagen md:w-full" src={Galeria4} alt="" />
         </div>
       </section>
     </div>

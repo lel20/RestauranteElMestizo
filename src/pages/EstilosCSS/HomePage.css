@@ -79,6 +79,33 @@
 .opciones-card:hover{
   transform: scale(.9);
 }
+.opcion-1{
+  background-image: url(../../assets/raciones.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+.opcion-2{
+  background-image: url(../../assets/entrante.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.opcion-3{
+  background-image: url(../../assets/sopas.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.opcion-4{
+  background-image: url(../../assets/ensalda.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.opcion-5{
+  background-image: url(../../assets/tipicos.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
 .opcion-11{
   background-image: url(../../assets/vinos.png);
   background-repeat: no-repeat;
@@ -152,4 +179,24 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
 
+}
+/* -----------GALERIA ----------------*/
+.galeria{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 25rem;
+}
+.contenedor-galeria{
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  
+}
+.galeria-imagen{
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
 }
