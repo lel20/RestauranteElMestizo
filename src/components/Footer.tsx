@@ -13,7 +13,7 @@ export const Footer = () => {
           <div className="group">
             <p className="hour-Description">
               <TbClockHour9Filled />
-              <span>Lunes 10:00 am - 22:00 pm</span>
+              <span>Lunes a Domingos de 10:00 am - 22:00 pm</span>
             </p>
             
           </div>

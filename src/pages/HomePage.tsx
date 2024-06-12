@@ -29,19 +29,39 @@ export const HomePage = () => {
       </section>
       {/* ------------------------------------------------------------ */}
       <section className="carta">
+        <h1 className="titulo-carta md:w-2/4 md:text-6xl">platos a la carta</h1>
         <div className="contenedor-carta container ">
-          <a className="opciones-card opcion-1" href="">Raciones</a>
-          <a className="opciones-card opcion-2" href="">Entrantes</a>
-          <a className="opciones-card opcion-3" href="">Caldos y Sopas</a>
-          <a className="opciones-card opcion-4" href="">Ensaladas</a>
-          <a className="opciones-card opcion-5" href="">Platos Típicos</a>
-          <a className="opciones-card" href="">Batidos y Jugos</a>
-          <a className="opciones-card" href="">Resfrescos</a>
-          <a className="opciones-card" href="">Resfrescos Importados</a>
-          <a className="opciones-card" href="">Tercios</a>
-          <a className="opciones-card" href="">Jarras</a>
+          <a className="opciones-card opcion-1" href="">
+            <span>Raciones</span>
+          </a>
+          <a className="opciones-card opcion-2" href="">
+            <span>Entrantes</span>
+          </a>
+          <a className="opciones-card opcion-3" href="">
+            <span>Caldos y Sopas</span>
+          </a>
+          <a className="opciones-card opcion-4" href="">
+            <span>Ensaladas</span>
+          </a>
+          <a className="opciones-card opcion-5" href="">
+            <span>Platos Típicos</span>
+          </a>
+          <a className="opciones-card" href="">
+            <span>Batidos y Jugos</span>
+          </a>
+          <a className="opciones-card" href="">
+            <span>Resfrescos</span>
+          </a>
+          <a className="opciones-card" href="">
+            <span>Resfrescos Importados</span>
+          </a>
+          <a className="opciones-card" href="">
+            <span>Tercios</span>
+          </a>
+          <a className="opciones-card" href="">
+            <span>Jarras</span>
+          </a>
           <a className="opciones-card opcion-11" href="">
-            
             <span className="absolute">Vinos</span>
           </a>
         </div>
@@ -103,6 +123,7 @@ export const HomePage = () => {
         </div>
       </section>
       <section className="galeria">
+        <h1 className="titulo-galeria md:w-3/6 md:text-6xl">Galería</h1>
         <div className="contenedor-galeria container">
           <img className="galeria-imagen md:w-full"  src={Galeria1} alt="" />
           <img className="galeria-imagen md:w-full" src={Galeria2} alt="" />
