@@ -1,0 +1,41 @@
+.contacto{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 31rem;
+  background-image: url(../../assets/contacto.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contacto::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 31rem;
+  background-color: rgba(20, 20, 20, .6 );
+}
+.contenedor-contacto{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 30rem;
+  margin: auto;
+
+} 
+.titulo-contacto{
+  width: 100%;
+  text-align: center;
+  font-family: "Aoboshi One", serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  font-style: normal;
+  color: whitesmoke;
+}

@@ -1,7 +1,16 @@
+import './EstilosCSS/Contacto.css'
 export const Contacto=()=>{
   return(
-    <section id="contact">
-        <h2>Contacto</h2>
+    <section className="contacto">
+        <div className="contenedor-contacto container">
+          <h1 className='titulo-contacto'>VEN Y CONÓCENOS</h1>
+          <p>Si tienes alguna duda sobre nosotros, ponte en contacto y te ayudaremos a solucionarlo</p>
+
+        </div>
+
+
+
+        {/* <h2>Contacto</h2>
         <div>
           <p>
             <strong>Dirección:</strong> 123 Calle Principal, Ciudad, País
@@ -22,7 +31,7 @@ export const Contacto=()=>{
           >
             <a href="https://www.gps.ie/car-satnav-gps/">GPS car tracker</a>
           </iframe>
-        </div>
+        </div> */}
       </section>
   )
 }
