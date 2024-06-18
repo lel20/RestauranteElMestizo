@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 31rem;
+  min-height: 34rem;
   background-image: url(../../assets/contacto.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -16,7 +16,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 31rem;
+  height: 100%;
   background-color: rgba(20, 20, 20, .6 );
 }
 .contenedor-contacto{
@@ -26,7 +26,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 30rem;
+  min-height: 34rem;
   margin: auto;
 
 } 
@@ -34,25 +34,76 @@
   width: 100%;
   text-align: center;
   font-family: "Aoboshi One", serif;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   font-weight: 500;
   font-style: normal;
   color: whitesmoke;
+}
+.descripcion-contacto{
+  background-color: rgba(59, 59, 59, 0.6);
+  padding: 1rem;
+  color: rgb(232, 232, 232);
+  font-family: "Aoboshi One", serif;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0;
 }
 
 /* ------------------------- Sección Mapa -------------------- */
 .mapa{
   width: 100%;
-  min-height: 20rem;
+  min-height: 30rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
 }
 .contenedor-mapa{
+  display:grid;
   width: 100%;
-  margin: auto;
+  min-height: 30rem;
+  grid-template-columns: 1fr;
+  column-gap: 4rem;
+  padding: 10rem 1rem 1rem 1rem ;
+}
+.titulo-mapa,
+.titulo-horario{
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: "Aoboshi One", serif;
+  font-size: 2rem;
+}
+.horario p{
+  font-family: "Aoboshi One", serif;
+  font-size: 1.2rem;
+  color: rgb(47, 47, 47);
+  margin-bottom: 1rem;
+
 }
 .iframe-mapa{
-  margin: 20rem 0 20rem 0;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 20rem;
+  height: 30rem;
+}
+.iframe{
+  height: 100%;
+}
+.horario{
+  width: 100%;
+
+}
+/* ----------- Formulario ------------------- */
+.formulario{
+  width: 100%;
+  min-height: 30rem;
+  background-color: rgb(84, 84, 84);
+}
+.contenedor-formulario{
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 2rem;
+  padding: 10rem 2rem 2rem;
 }

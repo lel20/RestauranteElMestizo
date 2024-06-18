@@ -1,5 +1,5 @@
 .section-Footer{
-  background-color:  rgb(254, 155, 25);
+  background-color:  rgb(0, 0, 0);
   color: rgb(30, 29, 29);
   min-height: 10rem;
   display: flex;
@@ -18,12 +18,14 @@
 .Footer-h2{
   text-transform: uppercase;
   font-weight: bold;
+  color: antiquewhite;
 }
 .hour,
 .location,
 .social{
   margin-bottom: 2rem;
   width: 100%;
+  color: antiquewhite;
 
 }
 .location-body,
@@ -45,15 +47,17 @@
 .addres{
   display: flex;
   flex-direction: column;
+  color: antiquewhite;
 
 }
 .divisor{
   margin-top: 1rem;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
 }
 .author{
   display: flex;
   justify-content: center;
   width: 100%;
   padding-left: 2rem;
+  color: antiquewhite;
 }
