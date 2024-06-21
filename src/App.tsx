@@ -5,6 +5,8 @@ import { Contacto } from "./pages/Contacto";
 import { Menu } from "./pages/Menu";
 import { Filosofia } from "./pages/Filosofia";
 import { Footer } from "./components/Footer";
+import { Raciones } from "./pages/Raciones";
+import { Entrantes } from "./pages/Entrantes";
 function App() {
   return (
     <Router>
@@ -14,6 +16,8 @@ function App() {
         <Route path="/menu" element={<Menu />} />
         <Route path="/filosofia" element={<Filosofia />} />
         <Route path="/contacto" element={<Contacto />} />
+        <Route path="/raciones" element={<Raciones />} />
+        <Route path="/entrantes" element={<Entrantes />} />
       </Routes>
       <Footer />
     </Router>

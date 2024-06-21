@@ -31,10 +31,10 @@ export const HomePage = () => {
       <section className="carta">
         <h1 className="titulo-carta md:w-2/4 md:text-6xl">platos a la carta</h1>
         <div className="contenedor-carta container ">
-          <a className="opciones-card opcion-1" href="">
+          <a className="opciones-card opcion-1" href="/raciones">
             <span>Raciones</span>
           </a>
-          <a className="opciones-card opcion-2" href="">
+          <a className="opciones-card opcion-2" href="/entrantes">
             <span>Entrantes</span>
           </a>
           <a className="opciones-card opcion-3" href="">
