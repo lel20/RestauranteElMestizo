@@ -6,6 +6,5 @@ class Entrantes(models.Model):
     imagen = models.URLField(blank=True)  # Campo para almacenar la URL de la imagen
     disponibilidad = models.CharField(max_length=5)
     
-
     def __str__(self):
         return self.nombre

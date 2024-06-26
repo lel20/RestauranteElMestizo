@@ -26,7 +26,10 @@ SECRET_KEY = 'django-insecure-9nb2=q%=^@1!@a@lx=lx5$v#kb2zs80m@$@t%xci@4%o@6_qxl
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+CORS_ALLOWED_ORIGINS = [
+    'http://192.168.43.11:5173',  # Agrega aquí el origen desde donde haces las solicitudes (tu frontend React)
+    'http://localhost:8000',  # Ejemplo adicional de otro origen permitido
+]
 
 # Application definition
 
@@ -39,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'djongo',
     'menu',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -49,6 +53,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'Mestizo.urls'

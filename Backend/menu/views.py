@@ -7,7 +7,8 @@ import json
 # Create your views here.
 def index(request):
     entrantes = Entrantes.objects.all()
-    return render(request, 'index.html', {'entrantes': entrantes})
+    data = list(entrantes.values())  # Convertir queryset a lista de diccionarios
+    return JsonResponse(data, safe=False)
     
 def test_db_connection(request):
     try:
