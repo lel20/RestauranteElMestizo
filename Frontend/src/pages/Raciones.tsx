@@ -8,7 +8,7 @@ export const Raciones: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:8000");
+        const response = await fetch("http://192.168.43.11:8000");
         if (!response.ok) {
           throw new Error("fallo al obtener los datos");
         }

@@ -25,10 +25,12 @@ SECRET_KEY = 'django-insecure-9nb2=q%=^@1!@a@lx=lx5$v#kb2zs80m@$@t%xci@4%o@6_qxl
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+CORS_ALLOW_ALL_ORIGINS = True 
+ALLOWED_HOSTS = ['192.168.43.11','localhost']
 CORS_ALLOWED_ORIGINS = [
     'http://192.168.43.11:5173',  # Agrega aquí el origen desde donde haces las solicitudes (tu frontend React)
     'http://localhost:8000',  # Ejemplo adicional de otro origen permitido
+    
 ]
 
 # Application definition
