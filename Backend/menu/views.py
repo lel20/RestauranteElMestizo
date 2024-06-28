@@ -2,11 +2,11 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse
-from .models import Entrantes
+from .models import Raciones
 import json
 # Create your views here.
 def index(request):
-    entrantes = Entrantes.objects.all()
+    entrantes = Raciones.objects.all()
     data = list(entrantes.values())  # Convertir queryset a lista de diccionarios
     return JsonResponse(data, safe=False)
     
