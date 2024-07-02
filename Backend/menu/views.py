@@ -2,14 +2,18 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse
-from .models import Raciones
+from .models import Raciones, Entrantes
 import json
 # Create your views here.
-def index(request):
-    entrantes = Raciones.objects.all()
-    data = list(entrantes.values())  # Convertir queryset a lista de diccionarios
+def raciones(request):
+    raciones = Raciones.objects.all()
+    data = list(raciones.values())  # Convertir queryset a lista de diccionarios
     return JsonResponse(data, safe=False)
-    
+  
+def entrantes(request):
+    entrantes = Entrantes.objects.all()
+    data= list(entrantes.values())
+    return JsonResponse(data, safe=False) 
 def test_db_connection(request):
     try:
         Entrantes.objects.exists()
