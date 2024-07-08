@@ -6,7 +6,7 @@ import { Menu } from "./pages/Menu";
 import { Filosofia } from "./pages/Filosofia";
 import { Footer } from "./components/Footer";
 import { Raciones } from "./pages/Raciones";
-import { Entrantes } from "./pages/Entrantes";
+import { Entrante } from "./pages/Entrante";
 function App() {
   return (
     <Router>
@@ -17,7 +17,7 @@ function App() {
         <Route path="/filosofia" element={<Filosofia />} />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/raciones" element={<Raciones />} />
-        <Route path="/entrantes" element={<Entrantes />} />
+        <Route path="/entrantes" element={<Entrante />} />
       </Routes>
       <Footer />
     </Router>

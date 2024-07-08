@@ -1,7 +1,6 @@
 import { Racion } from "../interfaces/interfaz";
 
 export const Card: React.FC<Racion> = ({ nombre, precio, imagen,disponibilidad }) => {
-  console.log({nombre})
   return (
     <>
       <div className="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark">
@@ -17,7 +16,6 @@ export const Card: React.FC<Racion> = ({ nombre, precio, imagen,disponibilidad }
           <p className="mb-4 text-base">
             {precio.toFixed(2)}
           </p>
-         
         </div>
       </div>
     </>

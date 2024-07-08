@@ -16,6 +16,7 @@ class Entrantes(models.Model):
   descripcion = models.CharField(max_length = 100)
   disponibilidad= models.CharField(max_length = 5)
   imagen = models.URLField(blank=True)
+  nota= models.CharField(max_length=100)
   
   def __str__(self):
     return self.nombre

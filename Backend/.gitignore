@@ -1,4 +1,26 @@
-virtual/
-venv/
+# .gitignore for Django project
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
 virtualenv/
+venv/
 env/
+virtual/
+*.egg-info/
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+media
+
+# Static files
+staticfiles/
+
+# Local environment variables
+.env
