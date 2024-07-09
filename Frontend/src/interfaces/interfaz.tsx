@@ -5,7 +5,7 @@ export interface Racion {
   disponibilidad: string;
   // Define más propiedades según la estructura de tu respuesta JSON
 }
-export interface Entrantes {
+export interface Atributos {
   nombre: string;
   precio: number;
   imagen: string;

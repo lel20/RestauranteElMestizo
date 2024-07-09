@@ -1,5 +1,5 @@
-import { Entrantes } from "../interfaces/interfaz";
-export const Card1: React.FC<Entrantes> = ({
+import { Atributos } from "../interfaces/interfaz";
+export const Card1: React.FC<Atributos> = ({
   nombre,
   precio,
   imagen,
@@ -9,7 +9,7 @@ export const Card1: React.FC<Entrantes> = ({
 }) => {
   return (
     <>
-      <div className="block rounded-lg  gap-8 shadow-secondary-1 dark:bg-surface-dark border shadow">
+      <div className="block rounded-lg bg-white gap-8 shadow-secondary-1 dark:bg-surface-dark border shadow">
         <a href="#!">
           <img className=" rounded-t-lg h-[240px]" src={imagen} alt={nombre} />
         </a>

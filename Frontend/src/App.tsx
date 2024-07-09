@@ -7,6 +7,7 @@ import { Filosofia } from "./pages/Filosofia";
 import { Footer } from "./components/Footer";
 import { Raciones } from "./pages/Raciones";
 import { Entrante } from "./pages/Entrante";
+import { Caldos } from "./pages/Caldos";
 function App() {
   return (
     <Router>
@@ -18,6 +19,7 @@ function App() {
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/raciones" element={<Raciones />} />
         <Route path="/entrantes" element={<Entrante />} />
+        <Route path="/caldos" element= {< Caldos />} />
       </Routes>
       <Footer />
     </Router>

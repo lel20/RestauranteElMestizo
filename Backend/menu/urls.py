@@ -4,7 +4,10 @@ from . import views
 urlpatterns = [
     path('', views.raciones, name='raciones'),
     path('entrantes/', views.entrantes, name='entrantes'),
+    path('caldos/', views.caldos, name='caldos'),
+    path('tipicos/', views.tipicos, name='tipicos'),
     path('test-db/', views.test_db_connection, 
     name='test_db_connection'),
    
 ]
+ 

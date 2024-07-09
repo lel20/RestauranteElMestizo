@@ -37,7 +37,7 @@ export const HomePage = () => {
           <a className="opciones-card opcion-2" href="/entrantes">
             <span>Entrantes</span>
           </a>
-          <a className="opciones-card opcion-3" href="">
+          <a className="opciones-card opcion-3" href="/caldos">
             <span>Caldos y Sopas</span>
           </a>
           <a className="opciones-card opcion-4" href="">
