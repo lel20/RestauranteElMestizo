@@ -43,7 +43,7 @@ export const HomePage = () => {
           <a className="opciones-card opcion-4" href="">
             <span>Ensaladas</span>
           </a>
-          <a className="opciones-card opcion-5" href="">
+          <a className="opciones-card opcion-5" href="/tipicos">
             <span>Platos Típicos</span>
           </a>
           <a className="opciones-card" href="">

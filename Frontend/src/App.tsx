@@ -8,6 +8,7 @@ import { Footer } from "./components/Footer";
 import { Raciones } from "./pages/Raciones";
 import { Entrante } from "./pages/Entrante";
 import { Caldos } from "./pages/Caldos";
+import { Tipicos } from "./pages/Tipicos";
 function App() {
   return (
     <Router>
@@ -20,6 +21,7 @@ function App() {
         <Route path="/raciones" element={<Raciones />} />
         <Route path="/entrantes" element={<Entrante />} />
         <Route path="/caldos" element= {< Caldos />} />
+         <Route path="/tipicos" element= {< Tipicos />} />
       </Routes>
       <Footer />
     </Router>
