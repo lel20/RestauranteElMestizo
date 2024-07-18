@@ -43,3 +43,14 @@ class Tipicos(models.Model):
   
   def __str__(self):
     return self.nombre
+  
+class Batidos(models.Model):
+  nombre = models.CharField(max_length=20)
+  precio = models.DecimalField(max_digits=5, decimal_places=2) 
+  imagen = models.URLField(blank=True)
+  descripcion = models.CharField(max_length=100)
+  disponibilidad = models.CharField(max_length=5) 
+  nota = models.CharField(max_length=50)
+  
+  def __str__(self):
+    return self.nombre

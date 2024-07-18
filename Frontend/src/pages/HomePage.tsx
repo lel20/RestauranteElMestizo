@@ -46,7 +46,7 @@ export const HomePage = () => {
           <a className="opciones-card opcion-5" href="/tipicos">
             <span>Platos Típicos</span>
           </a>
-          <a className="opciones-card" href="">
+          <a className="opciones-card" href="/batidos">
             <span>Batidos y Jugos</span>
           </a>
           <a className="opciones-card" href="">

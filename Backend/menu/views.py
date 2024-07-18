@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse
-from .models import Raciones, Entrantes,Caldos, Tipicos
+from .models import Raciones, Entrantes,Caldos, Tipicos, Batidos
 import json
 # Create your views here.
 def raciones(request):
@@ -25,6 +25,12 @@ def tipicos(request):
     tipicos = Tipicos.objects.all()
     data=list(tipicos.values())
     return  JsonResponse(data, safe=False)
+
+def batidos(request):
+    batidos = Batidos.objects.all()
+    data=list(batidos.values())
+    return  JsonResponse(data, safe=False)
+
 def test_db_connection(request):
     try:
         Entrantes.objects.exists()
