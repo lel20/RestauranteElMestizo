@@ -31,39 +31,39 @@ export const HomePage = () => {
       <section className="carta">
         <h1 className="titulo-carta md:w-2/4 md:text-6xl">platos a la carta</h1>
         <div className="contenedor-carta container ">
-          <a className="opciones-card opcion-1" href="/raciones">
+          <Link className="opciones-card opcion-1" to="/raciones">
             <span>Raciones</span>
-          </a>
-          <a className="opciones-card opcion-2" href="/entrantes">
+          </Link>
+          <Link className="opciones-card opcion-2" to="/entrantes">
             <span>Entrantes</span>
-          </a>
-          <a className="opciones-card opcion-3" href="/caldos">
+          </Link>
+          <Link className="opciones-card opcion-3" to="/caldos">
             <span>Caldos y Sopas</span>
-          </a>
-          <a className="opciones-card opcion-4" href="">
+          </Link>
+          <Link className="opciones-card opcion-4" to="">
             <span>Ensaladas</span>
-          </a>
-          <a className="opciones-card opcion-5" href="/tipicos">
+          </Link>
+          <Link className="opciones-card opcion-5" to="/tipicos">
             <span>Platos Típicos</span>
-          </a>
-          <a className="opciones-card" href="">
+          </Link>
+          <Link className="opciones-card" to="/batidos">
             <span>Batidos y Jugos</span>
-          </a>
-          <a className="opciones-card" href="">
+          </Link>
+          <Link className="opciones-card" to="">
             <span>Resfrescos</span>
-          </a>
-          <a className="opciones-card" href="">
+          </Link>
+          <Link className="opciones-card" to="">
             <span>Resfrescos Importados</span>
-          </a>
-          <a className="opciones-card" href="">
+          </Link>
+          <Link className="opciones-card" to="">
             <span>Tercios</span>
-          </a>
-          <a className="opciones-card" href="">
+          </Link>
+          <Link className="opciones-card" to="">
             <span>Jarras</span>
-          </a>
-          <a className="opciones-card opcion-11" href="">
+          </Link>
+          <Link className="opciones-card opcion-11" to="">
             <span className="absolute">Vinos</span>
-          </a>
+          </Link>
         </div>
       </section>
       {/* -------------------------------------------------------------- */}

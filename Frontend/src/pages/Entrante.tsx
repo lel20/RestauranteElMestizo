@@ -22,7 +22,7 @@ export const Entrante: React.FC = () =>{
   }, []);
   return(
     <section className="entrantes py-10">
-      <div className="entrantes-contenedor container gap-y-6">
+      <div className="entrantes-contenedor container gap-y-6 md:grid-cols-13">
         {data.map((item, id) => (
           <Card1
             key={id} 

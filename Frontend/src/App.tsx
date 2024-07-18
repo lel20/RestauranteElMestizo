@@ -9,6 +9,7 @@ import { Raciones } from "./pages/Raciones";
 import { Entrante } from "./pages/Entrante";
 import { Caldos } from "./pages/Caldos";
 import { Tipicos } from "./pages/Tipicos";
+import { Batidos } from "./pages/Batidos";
 function App() {
   return (
     <Router>
@@ -21,7 +22,8 @@ function App() {
         <Route path="/raciones" element={<Raciones />} />
         <Route path="/entrantes" element={<Entrante />} />
         <Route path="/caldos" element= {< Caldos />} />
-         <Route path="/tipicos" element= {< Tipicos />} />
+        <Route path="/tipicos" element= {< Tipicos />} />
+        <Route path="/batidos" element={<Batidos />} />
       </Routes>
       <Footer />
     </Router>
