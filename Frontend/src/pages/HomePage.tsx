@@ -2,10 +2,10 @@
 import { Link } from "react-router-dom";
 import "./EstilosCSS/HomePage.css";
 import Chef from "../assets/chef.png";
-import Galeria1 from "../assets/galeria1.jpg"
-import Galeria2 from "../assets/galeria2.jpg"
-import Galeria3 from "../assets/galeria3.jpg"
-import Galeria4 from "../assets/galeria4.png"
+import Galeria1 from "../assets/galeria1.jpg";
+import Galeria2 from "../assets/galeria2.jpg";
+import Galeria3 from "../assets/galeria3.jpg";
+import Galeria4 from "../assets/galeria4.png";
 export const HomePage = () => {
   return (
     <div className="principal-Home">
@@ -45,13 +45,9 @@ export const HomePage = () => {
           </Link>
           <Link className="opciones-card opcion-5" to="/tipicos">
             <span>Platos Típicos</span>
-<<<<<<< HEAD
           </Link>
+          <Link className="opciones-card" to="/batidos"></Link>
           <Link className="opciones-card" to="/batidos">
-=======
-          </a>
-          <a className="opciones-card" href="/batidos">
->>>>>>> 898ec5b09f1d792146dae8ec8208a13341de7d1e
             <span>Batidos y Jugos</span>
           </Link>
           <Link className="opciones-card" to="">
@@ -130,7 +126,7 @@ export const HomePage = () => {
       <section className="galeria">
         <h1 className="titulo-galeria md:w-3/6 md:text-6xl">Galería</h1>
         <div className="contenedor-galeria container">
-          <img className="galeria-imagen md:w-full"  src={Galeria1} alt="" />
+          <img className="galeria-imagen md:w-full" src={Galeria1} alt="" />
           <img className="galeria-imagen md:w-full" src={Galeria2} alt="" />
           <img className="galeria-imagen md:w-full" src={Galeria3} alt="" />
           <img className="galeria-imagen md:w-full" src={Galeria4} alt="" />

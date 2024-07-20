@@ -20,7 +20,7 @@ export const Caldos: React.FC = () => {
   }, []);
   return (
     <section className="bg-slate-100/50 caldos py-10">
-      <div className="caldos-contenedor container gap-y-6">
+      <div className="caldos-contenedor container gap-y-6 md:grid-cols-13 md:px-32">
         {data.map((item, id) => (
           <Card1
             key={id}
