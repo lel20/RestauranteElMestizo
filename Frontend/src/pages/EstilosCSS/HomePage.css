@@ -8,11 +8,8 @@
  background-position: center;
  background-size: cover;
  display: flex;
- flex-direction: column;
  justify-content: center;
- align-items: center;
- padding: 2rem;
- min-height: 31rem;
+ min-height: 40rem;
 }
 .section1-Home::before {
   content: '';
@@ -26,10 +23,13 @@
 .contenedor-Home{
   position: relative;
   color: white;
+  width: 100%;
 }
 .title1-Home{
+  padding-top: 4rem;
   font-size: 1.5rem;
   font-weight: 600;
+  text-align: center;
   
 }
 .title2-Home{
@@ -37,10 +37,24 @@
   font-weight: 600;
   font-size: 2.5rem;
   color: rgb(255, 152, 16);
+  text-align: center;
 }
 .description-Home{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 20rem;
   font-size: 1.2rem;
-  
+  background-color: rgba(255, 152, 16, 0.9);
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+}
+.description-Text{
+  color: rgb(60, 59, 59);
+  font-family: 'Times New Roman', Times, serif;
+  padding: 0 2rem;
 }
 .boton-Home{
   position: relative;
@@ -64,17 +78,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 .titulo-carta{
-  margin-top: 20rem;
-  text-align: center;
-  width: 90%;
+  margin-top: 5rem;
+  text-align: right;
+  padding: 0 2rem;
   font-size: 2.5rem;
-  font-family: "Bungee", sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: 100;
-  font-style: normal;
-  color: rgb(255, 152, 16);
-  border-bottom: 5px solid rgb(255, 152, 16);
 
 }
 .contenedor-carta{

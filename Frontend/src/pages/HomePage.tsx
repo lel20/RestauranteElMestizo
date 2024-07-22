@@ -13,23 +13,25 @@ export const HomePage = () => {
       <section className="section1-Home">
         <div className="contenedor-Home">
           <h2 className="title1-Home md:text-[3rem] md:text-center">
-            Bienvenido a Nuestro Restaurante
+            Bienvenido Al Restaurante
           </h2>
           <h1 className="title2-Home md:text-[5rem] md:text-center">
             EL MESTIZO
           </h1>
-          <p className="description-Home md:text-center">
-            Saborea la auténtica cocina latina tradicional en un ambiente
-            acogedor, vibrante y con buena música
-          </p>
+          <div className="description-Home md:text-center">
+            <p className="description-Text md:w-2/4">
+              Sumérgete en la auténtica cocina latina tradicional en un ambiente acogedor y lleno de vida, donde cada platillo está preparado con esmero y se disfruta al ritmo de excelente música que te hará
+              sentir como en casa.
+            </p>
+            <Link className="boton-Home md:w-[18rem]" to="/menu">
+              Platos a la Carta
+            </Link>
+          </div>
         </div>
-        <Link className="boton-Home md:w-[18rem]" to="/menu">
-          Explora Los Platos a la Carta
-        </Link>
       </section>
       {/* ------------------------------------------------------------ */}
       <section className="carta">
-        <h1 className="titulo-carta md:w-2/4 md:text-6xl">platos a la carta</h1>
+        <h1 className="titulo-carta md:text-6xl">Platos a la carta</h1>
         <div className="contenedor-carta container ">
           <Link className="opciones-card opcion-1" to="/raciones">
             <span>Raciones</span>
