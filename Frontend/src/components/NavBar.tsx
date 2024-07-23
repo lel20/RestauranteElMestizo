@@ -13,12 +13,12 @@ export const NavBar = () => {
     setMenu(!menu)
   }
   return (
-    <nav className='nav md:h-[6rem]'>
+    <nav className='nav'>
       <div className="container contenedor">
         <div className="contenedor-cuerpo ">
           <div className=" flex  gap-4  justify-center items-center">
-            <img src={Logo} alt="LogoMestizo" className="w-[90px]" />
-            <h2 className="title md:text-[3rem] ">El Mestizo</h2>
+            <img src={Logo} alt="LogoMestizo" className="w-[50px]" />
+            <h2 className="title md:text-[2.3rem] ">El Mestizo</h2>
           </div>
           <div className="opciones-menu md:flex gap-3 ">
             <Link to="/">Inicio</Link>

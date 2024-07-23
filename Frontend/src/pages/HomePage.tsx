@@ -12,18 +12,26 @@ export const HomePage = () => {
       {/* ------------------------------------------------------------------ */}
       <section className="section1-Home">
         <div className="contenedor-Home">
-          <h2 className="title1-Home md:text-[3rem] md:text-center">
+          <h2 className="title1-Home md:text-[1.5rem] md:text-center">
             Bienvenido Al Restaurante
           </h2>
-          <h1 className="title2-Home md:text-[5rem] md:text-center">
+          <h1 className="title2-Home md:text-[4rem] md:text-center">
             EL MESTIZO
           </h1>
+          <div className="botones">
+            <Link className="boton-Home md:w-[15rem] bg-neutral-600" to="/menu">
+              Platos a la Carta
+            </Link>
+            <Link className="boton-Home md:w-[15rem] border" to="/menu">
+              Menú del día
+            </Link>
+
+          </div>
           <div className="description-Home md:text-center">
             <p className="description-Text md:w-2/4">
-              Sumérgete en la auténtica cocina latina tradicional en un ambiente acogedor y lleno de vida, donde cada platillo está preparado con esmero y se disfruta al ritmo de excelente música que te hará
-              sentir como en casa.
+              Sumérgete en la auténtica cocina latina tradicional en un ambiente acogedor y lleno de vida, donde cada platillo está preparado con esmero.
             </p>
-            <Link className="boton-Home md:w-[18rem]" to="/menu">
+            <Link className="boton-Pregunta md:w-[18rem]" to="/menu">
               Platos a la Carta
             </Link>
           </div>
@@ -32,6 +40,7 @@ export const HomePage = () => {
       {/* ------------------------------------------------------------ */}
       <section className="carta">
         <h1 className="titulo-carta md:text-6xl">Platos a la carta</h1>
+        <p className="carta-descripcion md:w-2/4">Descubre nuestra extensa variedad de comida latina, diseñada para hacerte sentir como en casa. Deléitate con nuestros exquisitos platos y vive una experiencia culinaria única.</p>
         <div className="contenedor-carta container ">
           <Link className="opciones-card opcion-1" to="/raciones">
             <span>Raciones</span>

@@ -39,6 +39,28 @@
   color: rgb(255, 152, 16);
   text-align: center;
 }
+.botones{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+  padding: 0 2rem;
+}
+.boton-Home{
+  position: relative;
+  width: 100%;
+  margin-top: 2rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1)
+}
+.boton-Home:hover{
+  transform: scale(1.1);
+}
 .description-Home{
   display: flex;
   flex-direction: column;
@@ -56,17 +78,6 @@
   font-family: 'Times New Roman', Times, serif;
   padding: 0 2rem;
 }
-.boton-Home{
-  position: relative;
-  width: 100%;
-  margin-top: 2rem;
-  border: 1px solid rgb(255, 255, 255);
-  height: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
 
 
 
@@ -82,19 +93,24 @@
 }
 .titulo-carta{
   margin-top: 5rem;
-  text-align: right;
   padding: 0 2rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: 'Times New Roman', Times, serif;
   font-weight: 100;
+  text-align: center;
 
+}
+.carta-descripcion{
+  padding: 2rem 2rem 0 2rem;
+  text-align: center;
+  
 }
 .contenedor-carta{
   width: 100%;
   display: grid;
   grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
   gap: 25px;
-  margin-top: 6rem;
+  margin-top: 3rem;
   padding: 2rem 1rem 4rem 1rem;
   
 }
