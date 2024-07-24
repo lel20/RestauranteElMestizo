@@ -22,7 +22,7 @@ export const HomePage = () => {
             <Link className="boton-Home md:w-[15rem] bg-neutral-600" to="/menu">
               Platos a la Carta
             </Link>
-            <Link className="boton-Home md:w-[15rem] border" to="/menu">
+            <Link className="boton-Home md:w-[15rem] border" to="/menudia">
               Menú del día
             </Link>
 

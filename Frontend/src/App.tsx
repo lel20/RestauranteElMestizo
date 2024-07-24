@@ -10,6 +10,7 @@ import { Entrante } from "./pages/Entrante";
 import { Caldos } from "./pages/Caldos";
 import { Tipicos } from "./pages/Tipicos";
 import { Batidos } from "./pages/Batidos";
+import { MenuDia } from "./pages/MenuDia";
 function App() {
   return (
     <Router>
@@ -24,6 +25,7 @@ function App() {
         <Route path="/caldos" element= {< Caldos />} />
         <Route path="/tipicos" element= {< Tipicos />} />
         <Route path="/batidos" element={<Batidos />} />
+        <Route path="/menudia" element={<MenuDia />} />
       </Routes>
       <Footer />
     </Router>

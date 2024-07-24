@@ -1,0 +1,41 @@
+.menudia{
+  width: 100%;
+  position: relative;
+  min-height: 44rem;
+
+}
+.menudia-titulo{
+  width: 90%;
+  margin-top: 3rem;
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 0 2rem;
+  color: rgb(88, 88, 88);
+}
+.menu-cuerpo{
+  position: relative;
+  min-height: 50rem;
+}
+.menu-contenedor{
+  display: flex;
+}
+.menu-articulo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 32rem;
+}
+.menu-primeros, 
+.menu-segundos{
+  flex: 1 1 0%;
+  padding: 1rem;
+  min-height: 32rem;
+  text-align: center;
+}
+.menu-h2{
+  color: rgb(255, 231, 76);
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
