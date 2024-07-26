@@ -1,7 +1,7 @@
 .menudia{
   width: 100%;
   position: relative;
-  min-height: 44rem;
+  min-height: 35rem;
 
 }
 .menudia-titulo{
@@ -13,29 +13,89 @@
   color: rgb(88, 88, 88);
 }
 .menu-cuerpo{
+  background-image: url('../../assets/ComidaLatina.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   min-height: 50rem;
 }
 .menu-contenedor{
+  position: absolute;
+  height: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .menu-articulo{
+  width: 90%;
+  height: 90%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 32rem;
+  background-color: rgba(255, 217, 146, 0.9);
+  padding: 1rem;
 }
-.menu-primeros, 
-.menu-segundos{
+.menu-principal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 10rem;
+  top: auto;
+  width: 100%;
+}
+.primeros, 
+.segundos{
   flex: 1 1 0%;
   padding: 1rem;
-  min-height: 32rem;
   text-align: center;
+  min-height: 100%;
 }
 .menu-h2{
-  color: rgb(255, 231, 76);
+  color: rgb(124, 107, 0);
   font-size: 1.6rem;
   font-weight: bold;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+.precio{
+  width: 100%;
+  min-height:4rem ;
+  display: flex;
+  justify-content: center;align-items: center;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+.menu-h1{
+  font-family: monospace;
+  font-size: 2rem;
+  font-weight: 900;
+  color: rgb(96, 42, 0);
+}
+.incluye{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.menu-h3{
+  font-family: "Allura", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+}
+.menu-p{
+  text-transform: uppercase;
+}
+.esperamos{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem 0;
+
 }

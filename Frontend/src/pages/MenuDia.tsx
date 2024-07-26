@@ -2,7 +2,7 @@ import "./EstilosCSS/MenuDia.css";
 export const MenuDia = () => {
   return (
     <>
-      <section className="menudia">
+      <section className="menudia md:min-h-[30rem]">
         <div className="container m-auto">
           <h1 className="menudia-titulo md:text-8xl  sm:text-6xl md:w-[60%]">
             Consulta nuestro menu del día
@@ -11,36 +11,38 @@ export const MenuDia = () => {
       </section>
       <section className="menu-cuerpo">
         <div className="menu-contenedor  container m-auto">
-          <article className="menu-articulo bg-orange-400">
-            {/* <div className="bg-slate-600">
-              <div className="menu-primeros ">
-                <h2 className="menu-h2 sm:text-4xl">Primeros</h2>
-                <div className="flex justify-center ">
-                  <ul className="list-disc list-inside text-start">
-                    <li>Sancocho de pescado</li>
-                    <li>Sancocho mixto</li>
-                    <li>Maduro con queso</li>
-                  </ul>
-                </div>
+          <article className="menu-articulo  ms:w-[80%] md:w-[60%]">
+            <div className="menu-principal">
+              <div className="primeros ">
+                <h2 className="menu-h2">Primeros</h2>
+                <ul className="list-inside list-disc ">
+                  <li>Sancocho de Pescado</li>
+                  <li>Sancocho mixto</li>
+                  <li>Maduro con queso</li>
+                </ul>
               </div>
-              <div className="menu-segundos">
-                <h2 className="menu-h2 sm:text-4xl">Segundos</h2>
-                <div className="flex justify-center">
-                  <ol className="list-disc list-outside text-start">
-                    <li>Tajada de maduro con pollo</li>
-                    <li>Bandera</li>
-                    <li>Patacón Pisao</li>
-                  </ol>
-                </div>
+              <div className="segundos">
+                <h2 className="menu-h2">Segundos</h2>
+                <ul className="list-inside list-disc ">
+                  <li>Tajada de maduro</li>
+                  <li>Bandera</li>
+                  <li>Patacon Pisado</li>
+                </ul>
               </div>
             </div>
-            <div className=" bg-slate-100 justify-center">
-              <p>Por Solo</p>
-              <h2>11,90</h2>
-            </div> */}
-          </article>
-          <article className="menu-articulo sm:flex-1">
-            <h2>Menu Neptuno</h2>
+            <div className="precio">
+              <p className="menu-p">Por Solo</p>
+              <h1 className="menu-h1 sm:text-5xl">11,90 €</h1>
+            </div>
+            <div className="incluye">
+              <p className="menu-p">Incluye</p>
+              <h3 className="menu-h3">Bebida y Postre !</h3>
+            </div>
+            <div className="esperamos">
+              <h2 className="menu-h2 uppercase">Te esperamos en:</h2>
+              <p>Calle Sol, 9, Armilla, Granada</p>
+              <p>Centro Comercial Neptuno, Junto al Gimnasio Mcfit</p>
+            </div>
           </article>
         </div>
       </section>
