@@ -2,16 +2,20 @@ import "./EstilosCSS/MenuDia.css";
 export const MenuDia = () => {
   return (
     <>
-      <section className="menudia md:min-h-[30rem]">
+      <section className="menudia md:min-h-[35rem] ">
         <div className="container m-auto">
-          <h1 className="menudia-titulo md:text-8xl  sm:text-6xl md:w-[60%]">
-            Consulta nuestro menu del día
+          <h1 className="menudia-titulo md:text-8xl  sm:text-6xl sm:w-[40%] md:w-[60%]">
+            Consulta nuestro menú del día
           </h1>
         </div>
       </section>
       <section className="menu-cuerpo">
         <div className="menu-contenedor  container m-auto">
           <article className="menu-articulo  ms:w-[80%] md:w-[60%]">
+          <div className="menu-titulo">
+            <h1 className="menu-h1 sm:text-5xl">Menu</h1>
+            <h3 className="menu-h3">Especial</h3>
+          </div>
             <div className="menu-principal">
               <div className="primeros ">
                 <h2 className="menu-h2">Primeros</h2>

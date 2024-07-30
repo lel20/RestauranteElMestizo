@@ -22,8 +22,8 @@ export const NavBar = () => {
           </div>
           <div className="opciones-menu md:flex gap-3 ">
             <Link to="/">Inicio</Link>
-            <Link to="/filosofia">Fisolofia</Link>
-            <Link to="/menu">Menu</Link>
+            <Link to="/filosofia">Platos a la carta</Link>
+            <Link to="/menudia">Menu</Link>
             <Link to="/contacto">Contacto</Link>
           </div>
           <FiMenu className="md:hidden text-4xl" onClick={handleClick} />
