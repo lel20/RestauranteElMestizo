@@ -1,0 +1,17 @@
+.menu-vertical-true{
+  position: absolute;
+  background-color: rgba(246, 246, 246);
+  transition: opacity 5s ease, transform 5s ease;
+  position: absolute;
+  
+}
+.menu-vertical-true:hover{
+  display: block;
+  opacity: 1;
+  transform: translateY(2);
+
+}
+.menu-vertical-false{
+  display: none;
+  
+}

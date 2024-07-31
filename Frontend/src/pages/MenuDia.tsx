@@ -12,10 +12,10 @@ export const MenuDia = () => {
       <section className="menu-cuerpo">
         <div className="menu-contenedor  container m-auto">
           <article className="menu-articulo  ms:w-[80%] md:w-[60%]">
-          <div className="menu-titulo">
-            <h1 className="menu-h1 sm:text-5xl">Menu</h1>
-            <h3 className="menu-h3">Especial</h3>
-          </div>
+            <div className="menu-titulo">
+              <h1 className="menu-h1 sm:text-5xl">Menu</h1>
+              <h3 className="menu-h3">Especial</h3>
+            </div>
             <div className="menu-principal">
               <div className="primeros ">
                 <h2 className="menu-h2">Primeros</h2>

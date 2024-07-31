@@ -1,0 +1,13 @@
+.menu-items{
+  list-style: none;
+  padding: .5rem ;
+  transition:all 5s;
+}
+
+.menu-boton{
+  transition: all 0.5s;
+  color: black;
+}
+.menu-boton:hover{
+  color: rgb(255, 111, 0);
+}

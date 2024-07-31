@@ -13,3 +13,20 @@ export interface Atributos {
   disponibilidad: string;
   nota: string;
 }
+export interface ItemsMenu{
+  titulo:string;
+  url:string;
+  submenu?:{
+    titulo:string;
+    url:string
+  }[],
+  
+}
+
+export interface ItemsProps {
+  itemsMenu: ItemsMenu;
+}
+export interface Submenu{
+  titulo:string
+  url:string
+}
