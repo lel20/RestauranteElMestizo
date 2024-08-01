@@ -12,6 +12,9 @@ export const NavBar = () => {
   const handleClick = () => {
     setMenu(!menu);
   };
+  const closeMenu = () => {
+    setMenu(false);
+  };
   return (
     <nav className="nav">
       <div className="container contenedor m-auto">
@@ -24,7 +27,9 @@ export const NavBar = () => {
             {MenuItems.map((menu, index) => (
               <Items 
                 itemsMenu={menu} 
-                key={index} />
+                key={index} 
+                closeMenu={closeMenu}
+                />
             ))}
           </div>
           <FiMenu 
@@ -35,7 +40,8 @@ export const NavBar = () => {
           <div className="opciones-menu1 md:hidden">
             {MenuItems.map((menu, index) => (
               <Items 
-                itemsMenu={menu} 
+                itemsMenu={menu}
+                closeMenu={closeMenu} 
                 key={index} />
             ))}
           </div>

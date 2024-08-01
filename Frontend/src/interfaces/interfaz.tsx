@@ -25,6 +25,7 @@ export interface ItemsMenu{
 
 export interface ItemsProps {
   itemsMenu: ItemsMenu;
+  closeMenu:void
 }
 export interface Submenu{
   titulo:string
