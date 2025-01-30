@@ -8,7 +8,7 @@ export const Caldos: React.FC = () => {
   useEffect(() => {
     const caldos = async () => {
       try {
-        const response = await fetch("http://192.168.43.11:8000/caldos/");
+        const response = await fetch("http://192.168.43.103:8000/caldos/");
         if (!response.ok) throw new Error("Fallo al otener los datos");
         const jsonData = await response.json();
         setData(jsonData);

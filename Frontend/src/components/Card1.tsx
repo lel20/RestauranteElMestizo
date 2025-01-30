@@ -21,7 +21,7 @@ export const Card1: React.FC<Atributos> = ({
       </div>
       <div className=" px-2 absolute bottom-0 right-0">
         <p className="my-4 text-right text-xl font-bold  ">
-          {precio.toFixed(2)} €
+          {precio} €
         </p>
       </div>
     </div>

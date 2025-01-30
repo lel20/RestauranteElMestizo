@@ -1,16 +1,18 @@
 # Create your models here.
 from djongo import models
 class Raciones(models.Model):
+  _id = models.ObjectIdField(primary_key=True) 
   nombre = models.CharField(max_length=20)
   precio = models.DecimalField(max_digits=5, decimal_places=2)
   imagen = models.URLField(blank=True)  # Campo para almacenar la URL de la imagen
   disponibilidad = models.CharField(max_length=5)
-    
+  
   def __str__(self):
     return self.nombre
 
 
 class Entrantes(models.Model):
+  _id = models.ObjectIdField(primary_key=True) 
   nombre = models.CharField(max_length = 20)
   precio = models.DecimalField(max_digits = 5, decimal_places = 2)
   descripcion = models.CharField(max_length = 100)
@@ -22,6 +24,7 @@ class Entrantes(models.Model):
     return self.nombre
   
 class Caldos(models.Model):
+  _id = models.ObjectIdField(primary_key=True) 
   nombre= models.CharField(max_length=20)
   precio=models.DecimalField(max_digits=5, decimal_places=2)
   descripcion= models.Field(max_length=100)
@@ -34,6 +37,7 @@ class Caldos(models.Model):
 
 
 class Tipicos(models.Model):
+  _id = models.ObjectIdField(primary_key=True) 
   nombre = models.CharField(max_length=20)
   precio = models.DecimalField(max_digits=5, decimal_places=2) 
   imagen = models.URLField(blank=True)
@@ -45,6 +49,7 @@ class Tipicos(models.Model):
     return self.nombre
   
 class Batidos(models.Model):
+  _id = models.ObjectIdField(primary_key=True) 
   nombre = models.CharField(max_length=20)
   precio = models.DecimalField(max_digits=5, decimal_places=2) 
   imagen = models.URLField(blank=True)

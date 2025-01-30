@@ -7,7 +7,7 @@ export const Entrante: React.FC = () =>{
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://192.168.43.11:8000/entrantes/");
+        const response = await fetch("http://192.168.43.103:8000/entrantes/");
         if (!response.ok) {
           throw new Error("fallo al obtener los datos");
         }

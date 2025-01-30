@@ -1,6 +1,6 @@
 export interface Racion {
   nombre: string;
-  precio: number;
+  precio: number | string;
   imagen: string;
   disponibilidad: string;
   // Define más propiedades según la estructura de tu respuesta JSON

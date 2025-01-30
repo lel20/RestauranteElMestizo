@@ -8,7 +8,7 @@ export const Tipicos: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://192.168.43.11:8000/tipicos/");
+        const response = await fetch("http://192.168.43.103:8000/tipicos/");
         if (!response.ok) {
           throw new Error("fallo al obtener los datos");
         }

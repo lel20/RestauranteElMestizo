@@ -14,7 +14,7 @@ export const Card: React.FC<Racion> = ({ nombre, precio, imagen,disponibilidad }
         <div className="p-6 text-surface dark:text-white">
           <h5 className="mb-2 text-xl font-medium leading-tight">{nombre}</h5>
           <p className="mb-4 text-base">
-            {precio.toFixed(2)}
+            {precio} €
           </p>
         </div>
       </div>
