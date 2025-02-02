@@ -14,20 +14,24 @@ import { MenuDia } from "./pages/MenuDia";
 function App() {
   return (
     <Router>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/menu" element={<Menu />} />
-        <Route path="/filosofia" element={<Filosofia />} />
-        <Route path="/contacto" element={<Contacto />} />
-        <Route path="/raciones" element={<Raciones />} />
-        <Route path="/entrantes" element={<Entrante />} />
-        <Route path="/caldos" element= {< Caldos />} />
-        <Route path="/tipicos" element= {< Tipicos />} />
-        <Route path="/batidos" element={<Batidos />} />
-        <Route path="/menudia" element={<MenuDia />} />
-      </Routes>
-      <Footer />
+      <div className="flex flex-col min-h-screen">
+        <div className="flex-grow">
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/menu" element={<Menu />} />
+            <Route path="/filosofia" element={<Filosofia />} />
+            <Route path="/contacto" element={<Contacto />} />
+            <Route path="/raciones" element={<Raciones />} />
+            <Route path="/entrantes" element={<Entrante />} />
+            <Route path="/caldos" element={< Caldos />} />
+            <Route path="/tipicos" element={< Tipicos />} />
+            <Route path="/batidos" element={<Batidos />} />
+            <Route path="/menudia" element={<MenuDia />} />
+          </Routes>
+        </div>
+        <Footer />
+      </div>
     </Router>
   );
 }

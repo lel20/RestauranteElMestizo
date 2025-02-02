@@ -9,11 +9,10 @@ import Galeria4 from "../assets/galeria4.png";
 export const HomePage = () => {
   return (
     <div className="principal-Home">
-      {/* ------------------------------------------------------------------ */}
       <section className="section1-Home">
         <div className="contenedor-Home">
-          <h2 className="title1-Home md:text-[1.5rem] md:text-center">
-            Bienvenido Al Restaurante
+          <h2 className="title1-Home md:text-[3.5rem] md:text-center">
+            Bienvenidos Al Restaurante
           </h2>
           <h1 className="title2-Home md:text-[4rem] md:text-center">
             EL MESTIZO
@@ -22,23 +21,26 @@ export const HomePage = () => {
             <Link className="boton-Home md:w-[15rem] bg-neutral-600" to="/menu">
               Platos a la Carta
             </Link>
-            <Link className="boton-Home md:w-[15rem] border" to="/menudia">
+            <Link className="boton-Home md:w-[15rem] border hover:bg-blue-950" to="/menudia">
               Menú del día
             </Link>
 
           </div>
-          <div className="description-Home md:text-center">
+          
+        </div>
+        <div className="description-Home md:text-center">
             <p className="description-Text md:w-2/4">
               Sumérgete en la auténtica cocina latina tradicional en un ambiente acogedor y lleno de vida, donde cada platillo está preparado con esmero.
             </p>
-            <Link className="boton-Pregunta md:w-[18rem]" to="/menu">
+            <Link className="boton-Pregunta md:w-[18rem] " to="/menu">
               Platos a la Carta
             </Link>
           </div>
-        </div>
       </section>
       {/* ------------------------------------------------------------ */}
-      <section className="carta">
+
+
+      {/* <section className="carta">
         <h1 className="titulo-carta md:text-6xl">Platos a la carta</h1>
         <p className="carta-descripcion md:w-2/4">Descubre nuestra extensa variedad de comida latina, diseñada para hacerte sentir como en casa. Deléitate con nuestros exquisitos platos y vive una experiencia culinaria única.</p>
         <div className="contenedor-carta container ">
@@ -77,9 +79,12 @@ export const HomePage = () => {
             <span className="absolute">Vinos</span>
           </Link>
         </div>
-      </section>
+      </section> */}
+
+
+
       {/* -------------------------------------------------------------- */}
-      <section className="filosofia bg-black/90">
+      {/* <section className="filosofia bg-black/90">
         <div className="contenedor-filosofia md:grid-cols-2 container m-auto">
           <div className=" w-[80%] flex flex-col justify-center">
             <h2 className="filosofia-titulo">Nuestra Filosofía</h2>
@@ -94,9 +99,13 @@ export const HomePage = () => {
           </div>
           <img className="md:w-[80%]" src={Chef} alt="" />
         </div>
-      </section>
+      </section> */}
+
+
+
+
       {/* -------------------------------------------------------------- */}
-      <section className="nosotros">
+      {/* <section className="nosotros">
         <div className="contenedor-nosotros md:grid-cols-2 container m-auto">
           <div>
             <h2 className="nosotros-Title">Sobre Nosotros</h2>
@@ -133,7 +142,11 @@ export const HomePage = () => {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
+
+
+      {/*       
+      
       <section className="galeria">
         <h1 className="titulo-galeria md:w-3/6 md:text-6xl">Galería</h1>
         <div className="contenedor-galeria container">
@@ -142,7 +155,7 @@ export const HomePage = () => {
           <img className="galeria-imagen md:w-full" src={Galeria3} alt="" />
           <img className="galeria-imagen md:w-full" src={Galeria4} alt="" />
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
