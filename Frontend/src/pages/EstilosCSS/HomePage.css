@@ -17,7 +17,7 @@
 
 .section1-Home {
   position: relative;
-  background-image: url('../../assets/Fondo.jpg');
+  /*background-image: url('../../assets/Fondo.jpg');*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -49,12 +49,14 @@
   width: 100%;
   text-align: center;
   padding-top: 4rem; /* Espaciado superior */
+  
 }
 
 .title1-Home {
   padding-top: 4rem;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 600;
+  padding: 0 1rem;
 }
 
 .title2-Home {
@@ -104,7 +106,7 @@
   width: 100%;
   min-height: 20rem;
   padding: 2rem;
-  background-color: rgba(255, 152, 16, 0.5);
+  background-color: rgba(255, 152, 16, 0.8);
   font-size: 1.3rem;
   text-align: center;
 }

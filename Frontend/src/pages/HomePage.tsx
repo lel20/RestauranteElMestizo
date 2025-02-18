@@ -6,12 +6,46 @@ import Galeria1 from "../assets/galeria1.jpg";
 import Galeria2 from "../assets/galeria2.jpg";
 import Galeria3 from "../assets/galeria3.jpg";
 import Galeria4 from "../assets/galeria4.png";
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
+const images = [
+  "./src/assets/Fondo.jpg",
+  "./src/assets/ComidaLatina.jpg",
+  "./src/assets/contacto.jpg",
+
+];
 export const HomePage = () => {
+  const [index, setIndex] = useState(0);
+  const [direction, setDirection] = useState(1);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setDirection(1);
+      setIndex((prev) => (prev + 1) % images.length);
+    }, 10000);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <div className="principal-Home">
+      <div className="absolute inset-0 overflow-hidden">
+        <AnimatePresence initial={false} custom={direction}>
+          <motion.img
+            key={index}
+            src={images[index]}
+            alt="Fondo"
+            className="absolute inset-0 w-full h-full object-cover"
+            initial={{ x: direction * 100 + "%" }}
+            animate={{ x: "0%" }}
+            exit={{ x: -direction * 100 + "%" }}
+            transition={{ duration: 3 }}
+          />
+        </AnimatePresence>
+      </div>
+
       <section className="section1-Home">
         <div className="contenedor-Home">
-          <h2 className="title1-Home md:text-[3.5rem] md:text-center">
+          <h2 className="title1-Home md:text-[4rem] md:text-center">
             Bienvenidos Al Restaurante
           </h2>
           <h1 className="title2-Home md:text-[4rem] md:text-center">
@@ -24,23 +58,21 @@ export const HomePage = () => {
             <Link className="boton-Home md:w-[15rem] border hover:bg-blue-950" to="/menudia">
               Menú del día
             </Link>
-
           </div>
-          
         </div>
         <div className="description-Home md:text-center">
-            <p className="description-Text md:w-2/4">
-              Sumérgete en la auténtica cocina latina tradicional en un ambiente acogedor y lleno de vida, donde cada platillo está preparado con esmero.
-            </p>
-            <Link className="boton-Pregunta md:w-[18rem] " to="/menu">
-              Platos a la Carta
-            </Link>
-          </div>
+          <p className="description-Text md:w-2/4">
+            Sumérgete en la auténtica cocina latina tradicional en un ambiente acogedor y lleno de vida, donde cada platillo está preparado con esmero.
+          </p>
+          <Link className="boton-Pregunta md:w-[18rem] " to="/menu">
+            Platos a la Carta
+          </Link>
+        </div>
       </section>
       {/* ------------------------------------------------------------ */}
 
 
-      {/* <section className="carta">
+      <section className="carta">
         <h1 className="titulo-carta md:text-6xl">Platos a la carta</h1>
         <p className="carta-descripcion md:w-2/4">Descubre nuestra extensa variedad de comida latina, diseñada para hacerte sentir como en casa. Deléitate con nuestros exquisitos platos y vive una experiencia culinaria única.</p>
         <div className="contenedor-carta container ">
@@ -79,12 +111,12 @@ export const HomePage = () => {
             <span className="absolute">Vinos</span>
           </Link>
         </div>
-      </section> */}
+      </section>
 
 
 
       {/* -------------------------------------------------------------- */}
-      {/* <section className="filosofia bg-black/90">
+      <section className="filosofia bg-black/90">
         <div className="contenedor-filosofia md:grid-cols-2 container m-auto">
           <div className=" w-[80%] flex flex-col justify-center">
             <h2 className="filosofia-titulo">Nuestra Filosofía</h2>
@@ -99,13 +131,13 @@ export const HomePage = () => {
           </div>
           <img className="md:w-[80%]" src={Chef} alt="" />
         </div>
-      </section> */}
+      </section>
 
 
 
 
       {/* -------------------------------------------------------------- */}
-      {/* <section className="nosotros">
+      <section className="nosotros">
         <div className="contenedor-nosotros md:grid-cols-2 container m-auto">
           <div>
             <h2 className="nosotros-Title">Sobre Nosotros</h2>
@@ -142,11 +174,11 @@ export const HomePage = () => {
             </p>
           </div>
         </div>
-      </section> */}
+      </section>
 
 
-      {/*       
-      
+
+
       <section className="galeria">
         <h1 className="titulo-galeria md:w-3/6 md:text-6xl">Galería</h1>
         <div className="contenedor-galeria container">
@@ -155,7 +187,7 @@ export const HomePage = () => {
           <img className="galeria-imagen md:w-full" src={Galeria3} alt="" />
           <img className="galeria-imagen md:w-full" src={Galeria4} alt="" />
         </div>
-      </section> */}
+      </section>
     </div>
   );
 };
