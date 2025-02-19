@@ -74,7 +74,7 @@ export const Footer = () => {
       <div className="author">
         <span> © 2024{" "}
           <a className="text-blue-500" href="https://github.com/lel20" target="_blank">Leonardo Paredes
-          </a>– Todos los derechos reservados.
+          </a> – Todos los derechos reservados.
         </span>
       </div>
     </footer>

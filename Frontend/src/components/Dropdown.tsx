@@ -5,7 +5,7 @@ import './Estilos/MenuVertical.css'
 interface SubmenuProps{
   submenus:Submenu[];
   dropdown:boolean;  
-  closeDropdown: () => void;
+  closeDropdown?: () => void;
 }
 export const Dropdown:React.FC<SubmenuProps> = ({submenus ,dropdown, closeDropdown}) => {
   return (

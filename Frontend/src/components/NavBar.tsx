@@ -21,7 +21,7 @@ export const NavBar = () => {
         <div className="contenedor-cuerpo ">
           <div className="nav-logo">
             <img src={Logo} alt="LogoMestizo" className="w-[50px]" />
-            <h2 className="title md:text-[2rem] ">El Mestizo</h2>
+            <h2 className="title md:text-[clamp(1rem,3vw,3rem)] ">El Mestizo</h2>
           </div>
           <div className="opciones-menu md:flex gap-3 ">
             {MenuItems.map((menu, index) => (

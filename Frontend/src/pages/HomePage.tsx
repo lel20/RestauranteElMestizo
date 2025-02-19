@@ -28,47 +28,45 @@ export const HomePage = () => {
   }, []);
   return (
     <div className="principal-Home">
-      <div className="absolute inset-0 overflow-hidden">
-        <AnimatePresence initial={false} custom={direction}>
-          <motion.img
-            key={index}
-            src={images[index]}
-            alt="Fondo"
-            className="absolute inset-0 w-full h-full object-cover"
-            initial={{ x: direction * 100 + "%" }}
-            animate={{ x: "0%" }}
-            exit={{ x: -direction * 100 + "%" }}
-            transition={{ duration: 3 }}
-          />
-        </AnimatePresence>
+      <div className="section-container1">
+        <div className="absolute inset-0 overflow-hidden ">
+          <AnimatePresence initial={false} custom={direction}>
+            <motion.img
+              key={index}
+              src={images[index]}
+              alt="Fondo"
+              className="absolute inset-0 w-full h-full object-cover"
+              initial={{ x: direction * 100 + "%" }}
+              animate={{ x: "0%" }}
+              exit={{ x: -direction * 100 + "%" }}
+              transition={{ duration: 2 }}
+            />
+          </AnimatePresence>
+          <section className="section1-Home">
+            <div className="contenedor-Home">
+              <h1 className="title2-Home md:text-[10vw] md:text-center">
+                EL MESTIZO
+              </h1>
+              <div className="botones">
+                <Link className="boton-Home md:w-[15rem]" to="/menu">
+                  Platos a la Carta
+                </Link>
+                <Link className="boton-Home md:w-[15rem]  hover:bg-blue-950" to="/menudia">
+                  Menú del día
+                </Link>
+              </div>
+            </div>
+            <div className="description-Home md:text-center">
+              <p className="description-Text md:w-2/4">
+                Sumérgete en la auténtica cocina latina tradicional en un ambiente acogedor y lleno de vida, donde cada platillo está preparado con esmero.
+              </p>
+              <Link className="boton-Pregunta md:w-[18rem] " to="/menu">
+                Platos a la Carta
+              </Link>
+            </div>
+          </section>
+        </div>
       </div>
-
-      <section className="section1-Home">
-        <div className="contenedor-Home">
-          <h2 className="title1-Home md:text-[4rem] md:text-center">
-            Bienvenidos Al Restaurante
-          </h2>
-          <h1 className="title2-Home md:text-[4rem] md:text-center">
-            EL MESTIZO
-          </h1>
-          <div className="botones">
-            <Link className="boton-Home md:w-[15rem] bg-neutral-600" to="/menu">
-              Platos a la Carta
-            </Link>
-            <Link className="boton-Home md:w-[15rem] border hover:bg-blue-950" to="/menudia">
-              Menú del día
-            </Link>
-          </div>
-        </div>
-        <div className="description-Home md:text-center">
-          <p className="description-Text md:w-2/4">
-            Sumérgete en la auténtica cocina latina tradicional en un ambiente acogedor y lleno de vida, donde cada platillo está preparado con esmero.
-          </p>
-          <Link className="boton-Pregunta md:w-[18rem] " to="/menu">
-            Platos a la Carta
-          </Link>
-        </div>
-      </section>
       {/* ------------------------------------------------------------ */}
 
 

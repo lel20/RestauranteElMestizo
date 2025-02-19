@@ -14,9 +14,16 @@
 .principal-Home {
   width: 100%;
 }
+.section-container1 {
+  position: relative;
+  height: 100vh;
+}
 
 .section1-Home {
-  position: relative;
+  position: absolute;
+  width: 100%;
+  min-height: 30rem; 
+  height: 100%;
   /*background-image: url('../../assets/Fondo.jpg');*/
   background-repeat: no-repeat;
   background-position: center;
@@ -26,8 +33,6 @@
   /* Apila los elementos verticalmente */
   justify-content: space-between;
   /* Distribuye el espacio entre los elementos */
-  min-height: 55rem;
-  /* Altura mínima de la sección */
   
 }
 
@@ -45,10 +50,16 @@
 
 .contenedor-Home {
   position: relative;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  text-align: center;
+  height: 100%;
+  justify-items: center;
+  color: white;
   padding-top: 4rem; /* Espaciado superior */
+ 
   
 }
 
@@ -62,7 +73,7 @@
 .title2-Home {
   font-family: var(--font-heading);
   font-weight: 900;
-  font-size: 2.5rem;
+  font-size: 13vw;
   color: white;
   margin-top: 1rem;
   /* Espaciado entre títulos */
@@ -70,6 +81,7 @@
 
 .botones {
   margin-top: 2rem;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -81,15 +93,18 @@
 .boton-Home {
   width: 100%;
   max-width: 15rem;
-  /* Ancho máximo para botones */
   height: 3rem;
+  font-size: clamp(0.5rem, 4vw, 1.5rem);
   display: flex;
+  font-size: cla 5vw;
   justify-content: center;
   align-items: center;
-  color: white;
   cursor: pointer;
   transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.3s ease;
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
+  border-width: 2px;
+  border: solid rgb(236, 236, 236);
+  color: rgb(235, 235, 235);
   /* Bordes redondeados */
 }
 
@@ -120,11 +135,13 @@
   /* Ancho máximo para el texto */
   margin: 0 auto;
   /* Centrar el texto */
+  color: rgb(32, 32, 32);
 }
 .boton-Pregunta{
   margin-top: 2rem;
   border-radius: .5rem;
   height: 3rem;
+  width: 15rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,6 +179,7 @@
 .carta-descripcion {
   padding: 2rem 2rem 0 2rem;
   text-align: center;
+  font-size: 1.5rem;
 
 }
 
