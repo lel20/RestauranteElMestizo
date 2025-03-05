@@ -57,7 +57,7 @@ export const HomePage = () => {
               </div>
             </div>
             <div className="description-Home md:text-center">
-              <p className="description-Text md:w-2/4">
+              <p className="description-Text md:w-2/4 md:text-[clamp(1.2rem,2.5vw,1.8rem)]">
                 Sumérgete en la auténtica cocina latina tradicional en un ambiente acogedor y lleno de vida, donde cada platillo está preparado con esmero.
               </p>
               <Link className="boton-Pregunta md:w-[18rem] " to="/menu">

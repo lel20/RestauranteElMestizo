@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Atributos } from "../interfaces/interfaz";
-import { Card1 } from "../components/Card1";
+import { Card } from "../components/Card";
 import './EstilosCSS/Caldos.css'
 
 export const Caldos: React.FC = () => {
@@ -22,7 +22,7 @@ export const Caldos: React.FC = () => {
     <section className="bg-slate-100/50 caldos py-10">
       <div className="caldos-contenedor container gap-y-6 md:grid-cols-13 md:px-32">
         {data.map((item, id) => (
-          <Card1
+          <Card
             key={id}
             nombre={item.nombre}
             precio={item.precio}

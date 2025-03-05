@@ -1,4 +1,4 @@
-import { Card1 } from "../components/Card1"
+import { Card } from "../components/Card"
 import React, { useEffect, useState } from "react";
 import './EstilosCSS/Entrantes.css'
 import { Atributos} from "../interfaces/interfaz";
@@ -24,7 +24,7 @@ export const Entrante: React.FC = () =>{
     <section className="entrantes py-10">
       <div className="entrantes-contenedor container gap-y-6 md:grid-cols-13">
         {data.map((item, id) => (
-          <Card1
+          <Card
             key={id} 
             nombre={item.nombre}
             precio={item.precio}

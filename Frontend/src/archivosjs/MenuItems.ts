@@ -1,68 +1,68 @@
-export const MenuItems=[
+export const MenuItems = [
   {
-    titulo:"Inicio",
-    url:'/',
+    titulo: "Inicio",
+    url: '/',
   },
   {
-    titulo:"Platos a la Carta",
-    url:'',
-    submenu:[
+    titulo: "Platos a la Carta",
+    url: '',
+    submenu: [
       {
-        titulo:"Raciones",
-        url:"/raciones"
+        titulo: "Raciones",
+        url: "/raciones"
       },
       {
-        titulo:"Entrantes",
-        url:"/entrantes"
+        titulo: "Entrantes",
+        url: "/entrantes"
       },
       {
-        titulo:"Caldos y Sopas",
-        url:"/caldos"
-      },
-       {
-        titulo:"Ensaladas",
-        url:"/ensaladas"
+        titulo: "Caldos y Sopas",
+        url: "/caldos"
       },
       {
-        titulo:"Platos Típicos",
-        url:"/tipicos"
+        titulo: "Ensaladas",
+        url: "/ensaladas"
       },
       {
-        titulo:"Batidos y jugos",
-        url:"/batidos"
+        titulo: "Platos Típicos",
+        url: "/tipicos"
       },
       {
-        titulo:"Refrescos",
-        url:"/refrescos"
+        titulo: "Batidos y jugos",
+        url: "/batidos"
       },
       {
-        titulo:"Refrescos Importados",
-        url:"/importados"
+        titulo: "Refrescos",
+        url: "/refrescos"
       },
       {
-        titulo:"Tercios",
-        url:"/tercios"
+        titulo: "Refrescos Importados",
+        url: "/importados"
       },
       {
-        titulo:"jarras",
-        url:"/jarras"
+        titulo: "Tercios",
+        url: "/tercios"
       },
       {
-        titulo:"Vinos",
-        url:"/vinos"
+        titulo: "jarras",
+        url: "/jarras"
+      },
+      {
+        titulo: "Vinos",
+        url: "/vinos"
       },
     ]
   },
   {
-    titulo:"Menu del dia",
-    url:"menudia",
+    titulo: "Menu del dia",
+    url: "menudia",
   },
   {
-    titulo:"Eventos",
-    url:"/eventos",
+    titulo: "Eventos",
+    url: "/eventos",
   },
   {
-    titulo:"Contacto",
-    url:"/contacto",
+    titulo: "Contacto",
+    url: "/contacto",
   }
 ]

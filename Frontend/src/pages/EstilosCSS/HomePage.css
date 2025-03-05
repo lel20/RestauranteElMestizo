@@ -17,6 +17,7 @@
 .section-container1 {
   position: relative;
   height: 100vh;
+  min-height: 45rem;
 }
 
 .section1-Home {
@@ -121,21 +122,24 @@
   width: 100%;
   min-height: 20rem;
   padding: 2rem;
-  background-color: rgba(255, 152, 16, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.3rem;
   text-align: center;
 }
 
 .description-Text {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--color-text);
   /* Usando variable CSS */
-  font-family: var(--font-body);
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 1rem;
   max-width: 800px;
   /* Ancho máximo para el texto */
   margin: 0 auto;
   /* Centrar el texto */
-  color: rgb(32, 32, 32);
+  color: rgb(94, 94, 94);
 }
 .boton-Pregunta{
   margin-top: 2rem;
@@ -179,7 +183,12 @@
 .carta-descripcion {
   padding: 2rem 2rem 0 2rem;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  /* Usando variable CSS */
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 1rem;
 
 }
 

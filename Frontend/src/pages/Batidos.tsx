@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Atributos } from "../interfaces/interfaz"
-import { Card1 } from "../components/Card1"
+import { Card } from "../components/Card"
 
 export const Batidos:React.FC=()=>{
   const [data, setData]=useState<Atributos[]>([])
@@ -23,7 +23,7 @@ export const Batidos:React.FC=()=>{
       <div>
         {
           data.map((item,id)=>(
-            <Card1
+            <Card
             key={id}
             nombre={item.nombre}
             precio={item.precio}

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Card1 } from "../components/Card1";
+import { Card } from "../components/Card";
 import { Atributos } from "../interfaces/interfaz";
 import './EstilosCSS/Tipicos.css'
 
@@ -24,7 +24,7 @@ export const Tipicos: React.FC = () => {
     <section className="tipicos py-10">
       <div className="tipicos-contenedor container gap-y-6 md:grid-cols-13">
         {data.map((item, id) => (
-          <Card1
+          <Card
             key={id}
             nombre={item.nombre}
             precio={item.precio}

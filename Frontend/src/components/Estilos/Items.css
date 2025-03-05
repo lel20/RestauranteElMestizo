@@ -1,15 +1,18 @@
 .menu-items{
   list-style: none;
   padding: .5rem ;
-  transition:all 5s;
+
+  
 }
 
 .menu-boton{
   display: flex;
   align-items: center;
-  transition: all 0.5s;
+  
+  font-size: clamp(1rem, 1.2vw, 2rem);
   color: black;
 }
 .menu-boton:hover{
+  transition: all 0.5s;
   color: rgb(255, 111, 0);
 }

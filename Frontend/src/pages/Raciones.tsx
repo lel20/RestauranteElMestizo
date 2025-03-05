@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Card } from "../components/Card";
+import { CardRaciones } from "../components/CardRaciones";
 import "./EstilosCSS/Raciones.css";
 // Interfaces
 import { Racion } from "../interfaces/interfaz";
@@ -25,7 +25,7 @@ export const Raciones: React.FC = () => {
     <section className="raciones">
       <div className="raciones-contenedor container">
         {data.map((item, id) => (
-          <Card 
+          <CardRaciones 
             key={id} 
             nombre={item.nombre}
             precio={item.precio}
