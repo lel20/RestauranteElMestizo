@@ -6,6 +6,13 @@ import Galeria1 from "../assets/galeria1.jpg";
 import Galeria2 from "../assets/galeria2.jpg";
 import Galeria3 from "../assets/galeria3.jpg";
 import Galeria4 from "../assets/galeria4.png";
+import Galeria5 from "../assets/galeria5.jpg";
+import Galeria6 from "../assets/galeria6.png";
+import Galeria7 from "../assets/galeria7.png";
+import Galeria8 from "../assets/galeria8.png";
+import Galeria9 from "../assets/galeria9.png";
+import Galeria10 from "../assets/galeria10.jpg";
+import Galeria11 from "../assets/galeria11.png";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -72,7 +79,7 @@ export const HomePage = () => {
 
       <section className="carta">
         <h1 className="titulo-carta md:text-6xl">Platos a la carta</h1>
-        <p className="carta-descripcion md:w-2/4">Descubre nuestra extensa variedad de comida latina, diseñada para hacerte sentir como en casa. Deléitate con nuestros exquisitos platos y vive una experiencia culinaria única.</p>
+        <p className="carta-descripcion md:w-2/4 md:text-[clamp(1.2rem,2.5vw,1.8rem)]">Descubre nuestra extensa variedad de comida latina, diseñada para hacerte sentir como en casa. Deléitate con nuestros exquisitos platos y vive una experiencia culinaria única.</p>
         <div className="contenedor-carta container ">
           <Link className="opciones-card opcion-1" to="/raciones">
             <span>Raciones</span>
@@ -114,9 +121,9 @@ export const HomePage = () => {
 
 
       {/* -------------------------------------------------------------- */}
-      <section className="filosofia bg-black/90">
+      <section className="filosofia">
         <div className="contenedor-filosofia md:grid-cols-2 container m-auto">
-          <div className=" w-[80%] flex flex-col justify-center">
+          <div className=" w-[100%] flex flex-col justify-center bg-black p-4">
             <h2 className="filosofia-titulo">Nuestra Filosofía</h2>
             <p className="parrafo1-filosofia">
               "Cocinamos con amor para alimentar tu alma"
@@ -178,12 +185,19 @@ export const HomePage = () => {
 
 
       <section className="galeria">
-        <h1 className="titulo-galeria md:w-3/6 md:text-6xl">Galería</h1>
+        {/* <h1 className="titulo-galeria md:w-3/6 md:text-6xl">Galería</h1> */}
         <div className="contenedor-galeria container">
           <img className="galeria-imagen md:w-full" src={Galeria1} alt="" />
           <img className="galeria-imagen md:w-full" src={Galeria2} alt="" />
           <img className="galeria-imagen md:w-full" src={Galeria3} alt="" />
           <img className="galeria-imagen md:w-full" src={Galeria4} alt="" />
+          <img className="galeria-imagen md:w-full" src={Galeria5} alt="" />
+          <img className="galeria-imagen md:w-full" src={Galeria6} alt="" />
+          <img className="galeria-imagen md:w-full" src={Galeria7} alt="" />
+          <img className="galeria-imagen md:w-full" src={Galeria8} alt="" />
+          <img className="galeria-imagen md:w-full" src={Galeria9} alt="" />
+          <img className="galeria-imagen md:w-full" src={Galeria10} alt="" />
+          <img className="galeria-imagen md:w-full" src={Galeria11} alt="" />
         </div>
       </section>
     </div>
