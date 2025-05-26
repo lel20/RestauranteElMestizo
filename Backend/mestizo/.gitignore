@@ -1,0 +1,8 @@
+#modulos
+env/
+
+#variables de entorno
+.env
+
+# VS Code
+.vscode/
