@@ -23,7 +23,7 @@ export const Navigation = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full h-20 bg-[rgba(0,0,0,0.9)] z-50 text-white text-xl">
+      <nav className="fixed top-0 left-0 w-full h-20 bg-[rgba(0,0,0,0.7)] z-50 text-white text-xl">
         <div className="container mx-auto flex items-center justify-center h-full space-x-4 px-6">
           {/* logo y nombre */}
           <div className="flex items-center space-x-4">
@@ -98,7 +98,7 @@ export const Navigation = () => {
         </div>
       </nav>
       {mostrar && (
-        <div className="fixed  top-20 left-0 w-full h-full bg-black/90 text-xl text-white">
+        <div className="fixed  top-20 left-0 w-full h-full bg-black/90 text-xl text-white z-20">
           <ul className="flex flex-col h-[90%] items-center justify-center pace-x-4">
             <li className="w-full flex justify-center items-center h-10">
               <NavLink

@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
         <div className=" w-full min-h-screen flex flex-col">
           <Navigation />
-          <main className="container  mx-auto flex-grow">
+          <main className="flex-grow">
             <Routes>
               <Route path="/" element={<Inicio />}></Route>
               <Route path="/menu" element={<Menu />}></Route>

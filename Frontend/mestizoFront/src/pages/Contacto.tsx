@@ -1,3 +1,3 @@
 export const Contacto = () => {
-  return <div>Contacto</div>;
+  return <div className="min-h-screen">Contacto</div>;
 };

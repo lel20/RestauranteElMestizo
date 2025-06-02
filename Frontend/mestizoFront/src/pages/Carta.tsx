@@ -1,3 +1,3 @@
 export const Carta = () => {
-  return <div>carta</div>;
+  return <div className="min-h-screen">carta</div>;
 };

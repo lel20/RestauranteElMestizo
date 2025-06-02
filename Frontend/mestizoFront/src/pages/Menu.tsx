@@ -1,3 +1,3 @@
 export const Menu = () => {
-  return <div>Menu</div>;
+  return <div className="min-h-screen">Menu</div>;
 };

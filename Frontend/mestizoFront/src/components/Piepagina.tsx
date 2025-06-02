@@ -4,8 +4,8 @@ import Logo from "../assets/pizza.png";
 export const Piepagina = () => {
   return (
     <footer className="w-full h-[70rem] md:h-[40rem] flex flex-col justify-center  bg-black/90 text-white p-8 space-y-20">
-      <div className="  grid grid-cols-1 md:grid-cols-custom gap-20">
-        <div className="flex-1 flex min-w-[200px] h-full justify-center gap-x-4  items-center w-full ">
+      <div className=" container mx-auto w-full bg-amber-300 grid grid-cols-1 md:grid-cols-custom gap-20 text-center">
+        <div className="flex h-full justify-center gap-x-4  items-center w-full">
           <div className=" ">
             <p className="">Lunes</p>
             <p>Martes</p>
@@ -25,7 +25,7 @@ export const Piepagina = () => {
             <p>10:00h -22:00h </p>
           </div>
         </div>
-        <div className="flex flex-1 flex-col min-w-[200px] justify-center   w-full items-center">
+        <div className="flex  flex-col justify-center  items-center w-full">
           {Logo && (
             <img
               className="w-40 h-40 bg-amber-50 rounded-full"
@@ -36,7 +36,7 @@ export const Piepagina = () => {
 
           <h1>El Mestizo</h1>
         </div>
-        <div className="flex flex-1 space-x-4 min-w-[200px] justify-center w-full items-center">
+        <div className="flex  space-x-4 justify-center  items-center w-full">
           <a href="">
             <FaSquareInstagram />
           </a>
@@ -44,7 +44,7 @@ export const Piepagina = () => {
             <FaFacebook />
           </a>
         </div>
-        <div className="flex flex-1 flex-col space-x-4 min-w-[200px]  justify-center w-full items-center">
+        <div className="flex flex-col space-x-4 justify-center w-full bg-red-400 items-center">
           <a href="">Inicio</a>
           <a href="">Menu</a>
           <a href="">Carta</a>
