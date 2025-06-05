@@ -67,7 +67,7 @@ export const Piepagina = () => {
           <a href="/menu">Menu</a>
           <a href="/carta">Carta</a>
           <a href="/contacto">Contacto</a>
-          <a href="/not">Sobre Nosotros</a>
+          <a href="/#nosotros">Sobre Nosotros</a>
           <a href="">Galeria</a>
           <a href="/#filosofia">Filosofía</a>
         </div>
