@@ -1,4 +1,5 @@
 import { NavLink } from "react-router";
+import { Parallax } from "react-parallax";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 // @ts-ignore
@@ -27,12 +28,18 @@ export const Hero = () => {
       >
         {imagenes.map((img, i) => (
           <SwiperSlide key={i}>
-            <div
-              className=" relative h-full w-full bg-cover bg-center"
-              style={{ backgroundImage: `url(${img})` }}
-            >
-              <div className="absolute inset-0 bg-black/70 items-center  pointer-events-none z-0"></div>
-            </div>
+            <Parallax
+              className="relative h-full"
+              bgImage={img}
+              strength={200}
+              bgImageStyle={{
+                width: "100%",
+                height: "100%",
+                objetFit: "cover",
+                backgroundPosition: "center",
+              }}
+            ></Parallax>
+            <div className="absolute inset-0 bg-black/70 items-center  pointer-events-none z-0"></div>
           </SwiperSlide>
         ))}
       </Swiper>

@@ -24,7 +24,7 @@ export const Navigation = () => {
   return (
     <>
       <nav className="fixed top-0 left-0 w-full h-20 bg-[rgba(0,0,0,0.7)] z-50 text-white text-xl">
-        <div className="container mx-auto flex items-center justify-center h-full space-x-4 px-6">
+        <div className="container mx-auto flex items-center justify-around h-full space-x-4 px-6">
           {/* logo y nombre */}
           <div className="flex items-center space-x-4">
             {Logo && (

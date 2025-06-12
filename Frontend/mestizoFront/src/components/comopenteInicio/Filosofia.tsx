@@ -5,7 +5,7 @@ export const Filosofia = () => {
     <section
       id="filosofia"
       className="container flex flex-col md:flex-row min-h-screen mx-auto bg-gradient-to-b 
-         from-amber-50 to-white py-20"
+         from-amber-50 to-white pt-20"
     >
       <div className="md:w-1/2 px-6 flex justify-center items-center flex-col animate-fadeIn gap-6 mb-6">
         <h2 className="font-playfair text-3xl text-amber-800">Filosofia</h2>
