@@ -1,4 +1,4 @@
-import { CardPlatos } from "../cards/CardPlatso";
+import { CardPlatos } from "../cards/CardPlatos";
 import { Platos1 } from "../../data/Platos";
 export const Platos = () => {
   return (
@@ -14,7 +14,12 @@ export const Platos = () => {
       </div>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
         {Platos1.map((plato, index) => (
-          <CardPlatos key={index} nombre={plato.nombre} imagen={plato.img} />
+          <CardPlatos
+            key={index}
+            nombre={plato.nombre}
+            imagen={plato.img}
+            url={plato.url}
+          />
         ))}
       </div>
     </section>

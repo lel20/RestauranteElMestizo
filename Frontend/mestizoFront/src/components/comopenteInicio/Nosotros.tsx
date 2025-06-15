@@ -39,8 +39,16 @@ export const Nosotros = () => {
           <blockquote className="italic text-amber-700 border-l-4 border-amber-600 pl-4 max-w-3xl">
             “No cocinamos solo comida, cocinamos identidad.”
           </blockquote>
-          <button className="bg-black w-30 h-10 cursor-pointer text-white hover:rounded hover:text-orange-500">
-            <NavLink to="/masnosotros"> Leer más</NavLink>
+          <button
+            className="flex  bg-black w-30 h-10 cursor-pointer text-white hover:rounded 
+          hover:text-orange-500"
+          >
+            <NavLink
+              className="w-full h-full flex justify-center items-center"
+              to="/masnosotros"
+            >
+              Leer más
+            </NavLink>
           </button>
         </div>
         <div className="md:w-1/2 lg:w-1/3 h-[20rem] md:min-h-screen">
