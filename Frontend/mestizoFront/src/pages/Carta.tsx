@@ -1,3 +1,13 @@
+import { Raciones } from "../components/Raciones";
+import { Submenu } from "../components/Submenu";
+import { Outlet } from "react-router-dom";
 export const Carta = () => {
-  return <div className="min-h-screen">carta</div>;
+  return (
+    <section className="min-h-screen pt-20 w-full">
+      <div className="container mx-auto">
+        <Submenu />
+        <Outlet />
+      </div>
+    </section>
+  );
 };

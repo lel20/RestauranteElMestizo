@@ -1,6 +1,6 @@
 export const NuestraHistoria = () => {
   return (
-    <div className="min-h-screen w-full">
+    <section className="min-h-screen w-full">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold mb-6">Nuestra esencia</h2>
         <p className="text-gray-700 text-lg leading-relaxed mb-4">
@@ -21,6 +21,6 @@ export const NuestraHistoria = () => {
           conversación, un recuerdo.
         </p>
       </div>
-    </div>
+    </section>
   );
 };
