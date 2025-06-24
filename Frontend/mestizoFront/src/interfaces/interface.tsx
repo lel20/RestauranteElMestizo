@@ -4,3 +4,9 @@ export interface Plato {
   img: string;
   url: string;
 }
+export interface Racion {
+  id: number;
+  nombre: string;
+  precio: number;
+  disponibilidad: boolean;
+}
