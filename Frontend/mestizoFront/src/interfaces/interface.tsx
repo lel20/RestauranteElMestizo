@@ -10,3 +10,12 @@ export interface Racion {
   precio: number;
   disponibilidad: boolean;
 }
+
+export interface FormData {
+  nombre: string;
+  apellidos: string;
+  email: string;
+  telefono: string;
+  asunto: string;
+  mensaje: string;
+}

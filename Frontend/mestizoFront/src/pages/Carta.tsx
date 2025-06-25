@@ -1,4 +1,3 @@
-import { Raciones } from "../components/Raciones";
 import { Submenu } from "../components/Submenu";
 import { Outlet } from "react-router-dom";
 export const Carta = () => {

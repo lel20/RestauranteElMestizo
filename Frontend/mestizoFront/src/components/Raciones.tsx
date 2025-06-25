@@ -34,13 +34,13 @@ export const Raciones = () => {
             {Racioness.map((raciones, index) => (
               <div
                 key={index}
-                className="flex px-4 h-full w-full md:w-[50%] justify-between text-gray-300"
+                className="flex px-4 h-full w-full md:w-[70%] justify-between text-gray-300"
               >
-                <p className="">{raciones.nombre}</p>
-                <p className="w-[10%] mx-2 overflow-hidden whitespace-nowrap grow">
-                  {".".repeat(200)}
+                <p className="whitespace-nowrap">{raciones.nombre}</p>
+                <div className="flex-1 border-b-2 border-dotted border-gray-300 mx-2 self-center"></div>
+                <p className="whitespace-nowrap">
+                  {raciones.precio.toFixed(2)} €
                 </p>
-                <p className="">{raciones.precio.toFixed(2)} €</p>
               </div>
             ))}
           </div>

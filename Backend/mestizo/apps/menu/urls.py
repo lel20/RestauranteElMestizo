@@ -1,5 +1,5 @@
-from .views import Mostra_menu
+from .views import VisualizarEntrantes
 from django.urls import path
 urlpatterns=[
-    path('', Mostra_menu.as_view(), name="mostarMenu")
+    path('', VisualizarEntrantes.as_view(), name="mostarMenu")
 ]
