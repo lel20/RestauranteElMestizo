@@ -5,20 +5,20 @@ from .models import Entrantes, Raciones, Sopas,Tipicos
 class RacionesSerializer(serializers.ModelSerializer):
     class Meta:
         model=Raciones
-        fields=['nombre','precio','disponibilidad', 'fecha_creacion']
+        fields=['id','nombre','precio','disponibilidad', 'fecha_creacion']
 
 class EntrantesSerializer(serializers.ModelSerializer):
     class Meta:
         #La clase interna Meta sirve para idicar al serializador con que modelo de va a trabajar y que campos se deben incluir al momento de hacer la conversión a JSON
         model=Entrantes
-        fields=['nombre','precio','descripcion', 'disponibilidad',"fecha_creacion"]
+        fields=['id','nombre','precio','descripcion', 'disponibilidad',"fecha_creacion"]
 
 class SopasSerializer(serializers.ModelSerializer):
     class Meta:
         model=Sopas
-        fields=["nombre","precio","descripcion","disponibilidad","fecha_creacion"]
+        fields=['id',"nombre","precio","descripcion","disponibilidad","fecha_creacion"]
 
 class TipicosSerializer(serializers.ModelSerializer):
     class Meta:
         model=Tipicos
-        fields=['nombre',"precio","descripcion","disponibilidad", "fecha_creacion"]
+        fields=['id','nombre',"precio","descripcion","disponibilidad", "fecha_creacion"]

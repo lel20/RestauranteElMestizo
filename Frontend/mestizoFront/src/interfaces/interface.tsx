@@ -19,3 +19,13 @@ export interface FormData {
   asunto: string;
   mensaje: string;
 }
+
+// ----------------Interface de los platos ---------
+export interface CartaPlatos {
+  id: number;
+  nombre: string;
+  precio: number;
+  descripcion: string;
+  disponibilidad: boolean;
+  fecha_creacion: string;
+}

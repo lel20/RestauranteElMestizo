@@ -1,5 +1,27 @@
-import { Racioness } from "../data/Raciones";
-export const Bebidas = () => {
+import type { Racion } from "../../interfaces/interface";
+import { useFetch } from "../../hooks/useFetch";
+import { BeatLoader } from "react-spinners";
+
+export const Raciones = () => {
+  const url = "http://192.168.1.202:8000/raciones/";
+  const { datos, loading, error } = useFetch<Racion[]>(url);
+  if (loading) {
+    return (
+      <div className="flex w-full justify-center items-center h-screen">
+        <p>
+          <BeatLoader color="#0087ff" />
+        </p>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="flex w-full justify-center items-center h-screen">
+        <p>{error}</p>
+      </div>
+    );
+  }
   return (
     <section className="flex flex-col  min-h-screen">
       <div className="container mx-auto h-screen flex flex-col justify-center items-center ">
@@ -29,18 +51,16 @@ export const Bebidas = () => {
 
           <div className="flex flex-col w-full h-full items-center py-20 gap-y-2">
             <h2 className="text-amber-600 text-4xl font-playfair mb-10">
-              Bebidas
+              Raciones
             </h2>
-            {Racioness.map((raciones, index) => (
+            {datos?.map((raciones) => (
               <div
-                key={index}
+                key={raciones.id}
                 className="flex px-4 h-full w-full md:w-[70%] justify-between text-gray-300"
               >
                 <p className="whitespace-nowrap">{raciones.nombre}</p>
                 <div className="flex-1 border-b-2 border-dotted border-gray-300 mx-2 self-center"></div>
-                <p className="whitespace-nowrap">
-                  {raciones.precio.toFixed(2)} €
-                </p>
+                <p className="whitespace-nowrap">{raciones.precio} €</p>
               </div>
             ))}
           </div>

@@ -14,7 +14,11 @@ SECRET_KEY = 'django-insecure-_0eu^)!9f^hmk6ym7sj6a2$@vuus(zc!uk$b!_-6)tb^(x440!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+CORS_ALLOWED_ORIGINS = [
+    "http://192.168.1.202:5173",  # IP de tu frontend
+]
+
+ALLOWED_HOSTS = ['192.168.1.202','localhost']
 
 
 # Application definition
@@ -30,7 +34,8 @@ INSTALLED_APPS = [
     'apps.menu',
     'apps.contacto',
 
-    'rest_framework'
+    'rest_framework',
+    'corsheaders'
 
 ]
 
@@ -42,6 +47,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'proyecto.urls'
@@ -76,7 +82,7 @@ DATABASES = {
         'HOST': config('DB_HOST'),
         'PORT': config('DB_PORT'),
         'OPTIONS': {
-            'init_command': "SET time_zone='+01:00';",
+            'init_command': "SET time_zone='+02:00';",
         },
     }
 }
@@ -104,9 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
+LANGUAGE_CODE = 'es'
 
 USE_I18N = True
 

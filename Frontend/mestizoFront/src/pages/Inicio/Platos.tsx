@@ -1,4 +1,4 @@
-import { CardPlatos } from "../cards/CardPlatos";
+import { CardPlatos } from "../../components/cards/CardPlatos";
 import { Platos1 } from "../../data/Platos";
 export const Platos = () => {
   return (

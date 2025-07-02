@@ -1,5 +1,22 @@
-import { Racioness } from "../data/Raciones";
+import type { CartaPlatos } from "../../interfaces/interface";
+import { useFetch } from "../../hooks/useFetch";
+import { BeatLoader } from "react-spinners";
 export const Entrantes = () => {
+  const url = "http://192.168.1.202:8000/entrantes/";
+  const { datos, loading, error } = useFetch<CartaPlatos[]>(url);
+  if (loading)
+    return (
+      <div className="flex justify-center items-center w-full h-screen">
+        <BeatLoader color="#0087ff" />
+      </div>
+    );
+  if (error)
+    return (
+      <div className="w-full h-screen flex justify-center items-center">
+        <p>{error}</p>
+      </div>
+    );
+
   return (
     <section className="flex flex-col  min-h-screen">
       <div className="container mx-auto h-screen flex flex-col justify-center items-center ">
@@ -31,15 +48,23 @@ export const Entrantes = () => {
             <h2 className="text-amber-600 text-4xl font-playfair mb-10">
               Entrantes
             </h2>
-            {Racioness.map((raciones, index) => (
+            {datos?.map((entrantes) => (
               <div
-                key={index}
-                className="flex px-4 h-full w-full md:w-[70%] justify-between text-gray-300"
+                key={entrantes.id}
+                className="flex flex-col px-4 h-full w-full md:w-[70%] justify-between text-gray-300"
               >
-                <p className="whitespace-nowrap">{raciones.nombre}</p>
-                <div className="flex-1 border-b-2 border-dotted border-gray-300 mx-2 self-center"></div>
-                <p className="whitespace-nowrap">
-                  {raciones.precio.toFixed(2)} €
+                <div className="flex text-gray-300 items-center">
+                  <p className="whitespace-nowrap font-semibold">
+                    {entrantes.nombre}
+                  </p>
+                  <div className="flex-grow border-b-2 border-dotted border-gray-300 mx-2 self-center"></div>
+                  <p className="whitespace-nowrap font-semibold">
+                    {entrantes.precio} €
+                  </p>
+                </div>
+
+                <p className="text-gray-400 mt-1 w-[92%] break-words text-justify">
+                  {entrantes.descripcion}
                 </p>
               </div>
             ))}

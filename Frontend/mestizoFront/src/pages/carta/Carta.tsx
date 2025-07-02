@@ -1,4 +1,4 @@
-import { Submenu } from "../components/Submenu";
+import { Submenu } from "../../components/Submenu";
 import { Outlet } from "react-router-dom";
 export const Carta = () => {
   return (

@@ -1,8 +1,9 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import ImagenContacto from "../assets/contacto.jpg";
 import type { FormData } from "../interfaces/interface";
+import { useForm } from "../hooks/useForm";
 export const Contacto = () => {
-  const [datos, setDatos] = useState<FormData>({
+  const { datos, handleOnchage, resetForm } = useForm<FormData>({
     nombre: "",
     apellidos: "",
     email: "",
@@ -10,24 +11,13 @@ export const Contacto = () => {
     asunto: "",
     mensaje: "",
   });
-  const datoOnchage = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setDatos({ ...datos, [name]: value });
+
+  const handleOnclik = (e: React.FormEvent) => {
+    e.preventDefault();
     console.log(datos);
+    resetForm();
   };
-  const handleClick = () => {
-    alert(JSON.stringify(datos));
-    setDatos({
-      nombre: "",
-      apellidos: "",
-      email: "",
-      telefono: "",
-      asunto: "",
-      mensaje: "",
-    });
-  };
+
   return (
     <div className="min-h-screen w-full">
       <section className="min-h-screen w-full ">
@@ -68,7 +58,7 @@ export const Contacto = () => {
               placeholder="Nombre"
               autoComplete="given-name"
               value={datos.nombre}
-              onChange={datoOnchage}
+              onChange={handleOnchage}
             />
             <input
               className="outline-0 border-2 border-gray-400 h-10 px-2 rounded focus:border-blue-700"
@@ -77,7 +67,7 @@ export const Contacto = () => {
               placeholder="Apellidos..."
               autoComplete="family-name"
               value={datos.apellidos}
-              onChange={datoOnchage}
+              onChange={handleOnchage}
             />
 
             <input
@@ -87,7 +77,7 @@ export const Contacto = () => {
               placeholder="correo@gmail.com"
               autoComplete="email"
               value={datos.email}
-              onChange={datoOnchage}
+              onChange={handleOnchage}
             />
             <input
               className="outline-0 border-2 border-gray-400 h-10 px-2 rounded focus:border-blue-700"
@@ -97,7 +87,7 @@ export const Contacto = () => {
               autoComplete="tel"
               pattern="[0-9]*"
               value={datos.telefono}
-              onChange={datoOnchage}
+              onChange={handleOnchage}
             />
             <input
               className="outline-0 border-2 border-gray-400 h-10 px-2 rounded focus:border-blue-700"
@@ -105,21 +95,21 @@ export const Contacto = () => {
               name="asunto"
               placeholder="Asunto"
               value={datos.asunto}
-              onChange={datoOnchage}
+              onChange={handleOnchage}
             />
             <textarea
               className="outline-0 border-2 border-gray-400 h-60 px-2 rounded focus:border-blue-700"
               name="mensaje"
               placeholder="Escribe tu mensaje aquí"
               value={datos.mensaje}
-              onChange={datoOnchage}
+              onChange={handleOnchage}
               rows={50}
               cols={5}
             ></textarea>
           </div>
           <button
             className=" bg-amber-500 w-30 h-10 rounded text-amber-50 cursor-pointer"
-            onClick={handleClick}
+            onClick={handleOnclik}
           >
             Enviar
           </button>

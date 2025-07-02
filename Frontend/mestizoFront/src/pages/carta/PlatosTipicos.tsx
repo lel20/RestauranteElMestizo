@@ -1,5 +1,26 @@
-import { Racioness } from "../data/Raciones";
+import type { CartaPlatos } from "../../interfaces/interface";
+
+import { useFetch } from "../../hooks/useFetch";
+import { BeatLoader } from "react-spinners";
 export const PlatosTipicos = () => {
+  const url = "http://192.168.1.202:8000/platostipicos/";
+  const { datos, loading, error } = useFetch<CartaPlatos[]>(url);
+  if (loading) {
+    return (
+      <div className="flex w-full justify-center items-center h-screen">
+        <BeatLoader color="#0087ff" />
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="flex w-full justify-center items-center h-screen">
+        <p>{error}</p>
+      </div>
+    );
+  }
+
   return (
     <section className="flex flex-col  min-h-screen">
       <div className="container mx-auto h-screen flex flex-col justify-center items-center ">
@@ -31,15 +52,23 @@ export const PlatosTipicos = () => {
             <h2 className="text-amber-600 text-4xl font-playfair mb-10">
               Plato Típicos
             </h2>
-            {Racioness.map((raciones, index) => (
+            {datos?.map((carta) => (
               <div
-                key={index}
-                className="flex px-4 h-full w-full md:w-[70%] justify-between text-gray-300"
+                key={carta.id}
+                className="flex flex-col px-4 h-full w-full md:w-[70%] justify-between text-gray-300"
               >
-                <p className="whitespace-nowrap">{raciones.nombre}</p>
-                <div className="flex-1 border-b-2 border-dotted border-gray-300 mx-2 self-center"></div>
-                <p className="whitespace-nowrap">
-                  {raciones.precio.toFixed(2)} €
+                <div className="flex items-center text-gray-300">
+                  <p className="whitespace-nowrap font-semibold">
+                    {carta.nombre}
+                  </p>
+                  <div className="flex-grow border-b-2 border-dotted border-gray-300 mx-4"></div>
+                  <p className="font-semibold whitespace-nowrap">
+                    {carta.precio} €
+                  </p>
+                </div>
+                <div className="flex-grow border-b-2 border-dotted border-gray-300 mx-2 self-center"></div>
+                <p className="text-gray-400 mt-1 w-[92%] break-words">
+                  {carta.descripcion}
                 </p>
               </div>
             ))}

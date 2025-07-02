@@ -1,19 +1,18 @@
 import { Navigation } from "./components/Navigation";
-import { Raciones } from "./components/Raciones";
+import { Raciones } from "./pages/carta/Raciones";
 import { Routes, Route, useLocation } from "react-router-dom";
-import { Inicio } from "./pages/Inicio";
+import { Inicio } from "./pages/Inicio/Inicio";
 import { Menu } from "./pages/Menu";
-import { Carta } from "./pages/Carta";
+import { Carta } from "./pages/carta/Carta";
 import { Contacto } from "./pages/Contacto";
 import { PaginaNoEncontrada } from "./pages/PaginaNoEncotrada";
 import { Piepagina } from "./components/Piepagina";
 import { useEffect } from "react";
 import ScrollToTop from "./components/ScrollToTop";
-import { NuestraHistoria } from "./components/comopenteInicio/NuestraHistoria";
-import { Entrantes } from "./components/Entrantes";
-import { PlatosTipicos } from "./components/PlatosTipicos";
-import { Ensaladas } from "./components/Ensaladas";
-import { Bebidas } from "./components/Bebidas";
+import { NuestraHistoria } from "./pages/Inicio/NuestraHistoria";
+import { Entrantes } from "./pages/carta/Entrantes";
+import { PlatosTipicos } from "./pages/carta/PlatosTipicos";
+
 function App() {
   const { hash, pathname } = useLocation();
   useEffect(() => {
@@ -41,8 +40,8 @@ function App() {
               <Route path="" element={<Raciones />}></Route>
               <Route path="entrantes" element={<Entrantes />}></Route>
               <Route path="platostipicos" element={<PlatosTipicos />}></Route>
-              <Route path="ensaladas" element={<Ensaladas />}></Route>
-              <Route path="bebidas" element={<Bebidas />}></Route>
+              {/* <Route path="ensaladas" element={<Ensaladas />}></Route>
+              <Route path="bebidas" element={<Bebidas />}></Route> */}
             </Route>
             <Route path="/contacto" element={<Contacto />}></Route>
             <Route path="*" element={<PaginaNoEncontrada />}></Route>
