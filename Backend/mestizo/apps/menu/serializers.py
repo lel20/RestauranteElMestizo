@@ -21,4 +21,4 @@ class SopasSerializer(serializers.ModelSerializer):
 class TipicosSerializer(serializers.ModelSerializer):
     class Meta:
         model=Tipicos
-        fields=['id','nombre',"precio","descripcion","disponibilidad", "fecha_creacion"]
+        fields=['id','nombre',"precio","imagen","descripcion","disponibilidad", "fecha_creacion"]

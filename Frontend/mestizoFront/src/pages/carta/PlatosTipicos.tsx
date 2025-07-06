@@ -1,6 +1,7 @@
 import type { CartaPlatos } from "../../interfaces/interface";
 
 import { useFetch } from "../../hooks/useFetch";
+import { CardMenu } from "../../components/cards/CardMenu";
 import { BeatLoader } from "react-spinners";
 export const PlatosTipicos = () => {
   const url = "http://192.168.1.202:8000/platostipicos/";
@@ -29,51 +30,19 @@ export const PlatosTipicos = () => {
         </h1>
         <p>Dsifruta de los sabores de Latino América</p>
       </div>
-      <div className="min-h-screen w-full">
-        <div className="container flex mx-auto min-h-screen bg-black/80 w-full">
-          <div className="hidden md:flex items-center justify-center min-h-screen w-50">
-            <h1 className="text-gray-300 text-7xl flex  transform rotate-90 origin-center">
-              <p className="mx-6">
-                <span className="mx-2">E</span>
-                <span className="mx-2">L</span>
-              </p>
-
-              <span className="mx-4">M</span>
-              <span className="mx-4">E</span>
-              <span className="mx-4">S</span>
-              <span className="mx-4">T</span>
-              <span className="mx-4">I</span>
-              <span className="mx-4">Z</span>
-              <span className="mx-4">O</span>
-            </h1>
-          </div>
-
-          <div className="flex flex-col w-full h-full items-center py-20 gap-y-2">
-            <h2 className="text-amber-600 text-4xl font-playfair mb-10">
-              Plato Típicos
-            </h2>
-            {datos?.map((carta) => (
-              <div
-                key={carta.id}
-                className="flex flex-col px-4 h-full w-full md:w-[70%] justify-between text-gray-300"
-              >
-                <div className="flex items-center text-gray-300">
-                  <p className="whitespace-nowrap font-semibold">
-                    {carta.nombre}
-                  </p>
-                  <div className="flex-grow border-b-2 border-dotted border-gray-300 mx-4"></div>
-                  <p className="font-semibold whitespace-nowrap">
-                    {carta.precio} €
-                  </p>
-                </div>
-                <div className="flex-grow border-b-2 border-dotted border-gray-300 mx-2 self-center"></div>
-                <p className="text-gray-400 mt-1 w-[92%] break-words">
-                  {carta.descripcion}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
+      <div
+        className="container mx-auto grid grid-cols-1 md:grid-cols-custom-1 
+                      lg:grid-cols-custom-2 p-4 gap-6"
+      >
+        {datos?.map((tipicos) => (
+          <CardMenu
+            key={tipicos.id}
+            imagen={tipicos.imagen}
+            nombre={tipicos.nombre}
+            precio={tipicos.precio}
+            descripcion={tipicos.descripcion}
+          />
+        ))}
       </div>
     </section>
   );

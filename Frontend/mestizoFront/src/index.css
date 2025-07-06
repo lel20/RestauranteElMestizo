@@ -6,6 +6,15 @@
 @utility grid-cols-custom {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
+
+@utility grid-cols-custom-1{
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr))
+}  
+
+@utility grid-cols-custom-2{
+  grid-template-columns:repeat(auto-fit, minmax(400px,1fr))
+}
+
 @utility font-playfair {
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;

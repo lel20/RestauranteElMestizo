@@ -1,7 +1,11 @@
 from pathlib import Path
 from decouple import config
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+# Ruta base del proyecto (normalmente ya está definida)
 BASE_DIR = Path(__file__).resolve().parent.parent
+# URL pública para acceder a archivos multimedia (imágenes, videos, etc.)
+MEDIA_URL = '/media/'
+# Carpeta física en el servidor donde se guardan los archivos subidos
+MEDIA_ROOT = BASE_DIR / 'media'
 
 TIME_ZONE = 'Europe/Madrid'
 USE_TZ = True

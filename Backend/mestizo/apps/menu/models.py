@@ -25,6 +25,8 @@ class Sopas(PlatosBase):
         return self.nombre
 
 class Tipicos(PlatosBase):
+   imagen=models.ImageField(upload_to='platos_tipicos/')
    descripcion=models.TextField()
+   
    def __str__(self):
        return self.nombre

@@ -6,3 +6,7 @@ env/
 
 # VS Code
 .vscode/
+
+# archivos estaticos
+
+media/
