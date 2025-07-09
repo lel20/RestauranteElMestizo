@@ -1,5 +1,5 @@
-import type { Racion } from "../../interfaces/interface";
-import { useFetch } from "../../hooks/useFetch";
+import type { Racion } from "../../../interfaces/interface";
+import { useFetch } from "../../../hooks/useFetch";
 import { BeatLoader } from "react-spinners";
 
 export const Raciones = () => {

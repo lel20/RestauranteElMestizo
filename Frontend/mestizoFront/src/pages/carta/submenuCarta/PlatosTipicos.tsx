@@ -1,7 +1,7 @@
-import type { CartaPlatos } from "../../interfaces/interface";
+import type { CartaPlatos } from "../../../interfaces/interface";
 
-import { useFetch } from "../../hooks/useFetch";
-import { CardMenu } from "../../components/cards/CardMenu";
+import { useFetch } from "../../../hooks/useFetch";
+import { CardMenu } from "../../../components/cards/CardMenu";
 import { BeatLoader } from "react-spinners";
 export const PlatosTipicos = () => {
   const url = "http://192.168.1.202:8000/platostipicos/";

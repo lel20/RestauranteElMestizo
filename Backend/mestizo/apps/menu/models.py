@@ -13,14 +13,23 @@ class Raciones(PlatosBase):
         return self.nombre
     
 class Entrantes(PlatosBase):
+    imagen=models.ImageField(upload_to='entrantes/')
     descripcion=models.TextField()
 
     def __str__(self):
         return self.nombre
 # Create your models here.
 
+class Ensaladas(PlatosBase):
+    imagen=models.ImageField(upload_to="ensaladas/")
+    descripcion=models.TextField()
+
+    def __str__(self):
+        return self.nombre
+
 class Sopas(PlatosBase):
     descripcion=models.TextField()
+    imagen=models.ImageField(upload_to="sopas/")
     def __str__(self):
         return self.nombre
 

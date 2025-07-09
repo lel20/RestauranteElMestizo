@@ -12,9 +12,16 @@ export const Contacto = () => {
     mensaje: "",
   });
 
-  const handleOnclik = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(datos);
+    const camposVacios = Object.values(datos).some(
+      (value) => value.trim() === ""
+    );
+    if (camposVacios) {
+      alert("No se puede enviar su mensajes con los campos vacios");
+      return;
+    }
+    alert("Datos enviados correctamente");
     resetForm();
   };
 
@@ -49,70 +56,76 @@ export const Contacto = () => {
             </h3>
             <h2 className="text-4xl">Escríbenos</h2>
           </div>
-          <div className=" w-full md:w-[50%] flex flex-col  justify-center  gap-10 h-screen md:p-10">
-            <input
-              className="outline-0 border-2 border-gray-400 h-10 px-2 rounded focus:border-blue-700"
-              type="text"
-              name="nombre"
-              id="nombre"
-              placeholder="Nombre"
-              autoComplete="given-name"
-              value={datos.nombre}
-              onChange={handleOnchage}
-            />
-            <input
-              className="outline-0 border-2 border-gray-400 h-10 px-2 rounded focus:border-blue-700"
-              type="text"
-              name="apellidos"
-              placeholder="Apellidos..."
-              autoComplete="family-name"
-              value={datos.apellidos}
-              onChange={handleOnchage}
-            />
-
-            <input
-              className="outline-0 border-2 border-gray-400 h-10 px-2 rounded focus:border-blue-700"
-              type="email"
-              name="email"
-              placeholder="correo@gmail.com"
-              autoComplete="email"
-              value={datos.email}
-              onChange={handleOnchage}
-            />
-            <input
-              className="outline-0 border-2 border-gray-400 h-10 px-2 rounded focus:border-blue-700"
-              type="tel"
-              name="telefono"
-              placeholder="610947223"
-              autoComplete="tel"
-              pattern="[0-9]*"
-              value={datos.telefono}
-              onChange={handleOnchage}
-            />
-            <input
-              className="outline-0 border-2 border-gray-400 h-10 px-2 rounded focus:border-blue-700"
-              type="text"
-              name="asunto"
-              placeholder="Asunto"
-              value={datos.asunto}
-              onChange={handleOnchage}
-            />
-            <textarea
-              className="outline-0 border-2 border-gray-400 h-60 px-2 rounded focus:border-blue-700"
-              name="mensaje"
-              placeholder="Escribe tu mensaje aquí"
-              value={datos.mensaje}
-              onChange={handleOnchage}
-              rows={50}
-              cols={5}
-            ></textarea>
-          </div>
-          <button
-            className=" bg-amber-500 w-30 h-10 rounded text-amber-50 cursor-pointer"
-            onClick={handleOnclik}
+          <form
+            onSubmit={handleSubmit}
+            className="w-full md:w-[50%] flex flex-col  justify-center items-center gap-6 
+            min-h-screen"
           >
-            Enviar
-          </button>
+            <div className=" w-full flex flex-col  justify-center  gap-6 h-screen ">
+              <input
+                className="outline-0 border-2 border-gray-400 h-10 px-2 rounded focus:border-blue-700"
+                type="text"
+                name="nombre"
+                id="nombre"
+                placeholder="Nombre"
+                autoComplete="given-name"
+                value={datos.nombre}
+                onChange={handleOnchage}
+              />
+              <input
+                className="outline-0 border-2 border-gray-400 h-10 px-2 rounded focus:border-blue-700"
+                type="text"
+                name="apellidos"
+                placeholder="Apellidos..."
+                autoComplete="family-name"
+                value={datos.apellidos}
+                onChange={handleOnchage}
+              />
+
+              <input
+                className="outline-0 border-2 border-gray-400 h-10 px-2 rounded focus:border-blue-700"
+                type="email"
+                name="email"
+                placeholder="correo@gmail.com"
+                autoComplete="email"
+                value={datos.email}
+                onChange={handleOnchage}
+              />
+              <input
+                className="outline-0 border-2 border-gray-400 h-10 px-2 rounded focus:border-blue-700"
+                type="tel"
+                name="telefono"
+                placeholder="610947223"
+                autoComplete="tel"
+                pattern="[0-9]*"
+                value={datos.telefono}
+                onChange={handleOnchage}
+              />
+              <input
+                className="outline-0 border-2 border-gray-400 h-10 px-2 rounded focus:border-blue-700"
+                type="text"
+                name="asunto"
+                placeholder="Asunto"
+                value={datos.asunto}
+                onChange={handleOnchage}
+              />
+              <textarea
+                className="outline-0 border-2 border-gray-400 h-60 px-2 rounded focus:border-blue-700"
+                name="mensaje"
+                placeholder="Escribe tu mensaje aquí"
+                value={datos.mensaje}
+                onChange={handleOnchage}
+                rows={50}
+                cols={5}
+              ></textarea>
+            </div>
+            <button
+              className=" bg-amber-500 w-30 h-12 rounded text-amber-50 cursor-pointer"
+              type="submit"
+            >
+              Enviar
+            </button>
+          </form>
         </div>
       </section>
       <section className="w-full min-h-screen">

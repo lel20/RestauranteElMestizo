@@ -9,11 +9,13 @@ from .models import (
     Entrantes, 
     Raciones,
     Tipicos, 
+    Ensaladas,
     Sopas)
 from .serializers import (
     EntrantesSerializer, 
     RacionesSerializer, 
     TipicosSerializer, 
+    EnsaladasSerializer,
     SopasSerializer)
 
 
@@ -30,11 +32,18 @@ class VisualizarRaciones(generics.ListCreateAPIView):
 class VisualizarEntrantes(generics.ListCreateAPIView):
     queryset=Entrantes.objects.all()
     serializer_class=EntrantesSerializer
+    parser_classes=[MultiPartParser, FormParser]
 #-------------------------- Sopas ----------------------
 class ListarCrearSopas(generics.ListCreateAPIView):
     queryset=Sopas.objects.all()
     serializer_class=SopasSerializer
+    parser_classes=[MultiPartParser, FormParser]
 #-------------------------- Platos Típicos--------------
+
+class ListarCrearEnsaladas(generics.ListCreateAPIView):
+    queryset=Ensaladas.objects.all()
+    serializer_class=EnsaladasSerializer
+    parser_classes=[MultiPartParser, FormParser]
 
 class ListarCrearTipicos(generics.ListCreateAPIView):
     queryset=Tipicos.objects.all()

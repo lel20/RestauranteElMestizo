@@ -30,3 +30,8 @@ export interface CartaPlatos {
   disponibilidad: boolean;
   fecha_creacion: string;
 }
+export interface SubmenuInterface {
+  id: number;
+  nombre: string;
+  url: string;
+}

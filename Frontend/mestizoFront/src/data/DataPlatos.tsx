@@ -1,5 +1,5 @@
 import type { Plato } from "../interfaces/interface";
-export const Platos1: Plato[] = [
+export const DataPlatos: Plato[] = [
   {
     id: 1,
     nombre: "Raciones",

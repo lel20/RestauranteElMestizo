@@ -5,6 +5,7 @@ from .views import (
     VisualizarEntrantes,
     VisualizarRaciones,
     ListarCrearTipicos,
+    ListarCrearEnsaladas,
     ListarCrearSopas)
 from django.urls import path
 urlpatterns=[
@@ -12,5 +13,6 @@ urlpatterns=[
     path('entrantes/', VisualizarEntrantes.as_view(), name="visualizarEntrantes"),
     path('raciones/', VisualizarRaciones.as_view(), name="visualizarraciones"),
     path('platostipicos/', ListarCrearTipicos.as_view(), name="listarcreartipicos"),
+    path('ensaladas/', ListarCrearEnsaladas.as_view(), name="listarcrearensaladas"),
     path('sopas/', ListarCrearSopas.as_view(), name='listarcrearsopas')
 ]

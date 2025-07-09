@@ -1,5 +1,5 @@
 import { CardPlatos } from "../../components/cards/CardPlatos";
-import { Platos1 } from "../../data/Platos";
+import { DataPlatos } from "../../data/DataPlatos";
 export const Platos = () => {
   return (
     <section className="w-full min-h-20 flex flex-col">
@@ -13,7 +13,7 @@ export const Platos = () => {
         </p>
       </div>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
-        {Platos1.map((plato, index) => (
+        {DataPlatos.map((plato, index) => (
           <CardPlatos
             key={index}
             nombre={plato.nombre}
