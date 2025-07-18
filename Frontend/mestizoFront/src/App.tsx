@@ -9,6 +9,7 @@ import { PlatosTipicos } from "./pages/carta/submenuCarta/PlatosTipicos";
 import { Caldos } from "./pages/carta/submenuCarta/Caldos";
 import { Raciones } from "./pages/carta/submenuCarta/Raciones";
 import { Ensaladas } from "./pages/carta/submenuCarta/Ensaladas";
+import { BebidasNaturales } from "./pages/carta/submenuCarta/Bebidas/BebidasNaturales";
 
 import { Contacto } from "./pages/Contacto";
 import { PaginaNoEncontrada } from "./pages/PaginaNoEncotrada";
@@ -16,6 +17,8 @@ import { Piepagina } from "./components/Piepagina";
 import { useEffect } from "react";
 import ScrollToTop from "./components/ScrollToTop";
 import { NuestraHistoria } from "./pages/Inicio/NuestraHistoria";
+import { Batidos } from "./pages/carta/submenuCarta/Bebidas/Batidos";
+import { Jugos } from "./pages/carta/submenuCarta/Bebidas/Jugos";
 
 function App() {
   const { hash, pathname } = useLocation();
@@ -47,6 +50,10 @@ function App() {
               <Route path="sopas" element={<Caldos />}></Route>
               <Route path="ensaladas" element={<Ensaladas />}></Route>
               {/* <Route path="bebidas" element={<Bebidas />}></Route> */}
+              <Route path="bebidasnaturales" element={<BebidasNaturales />}>
+                <Route path="batidos" element={<Batidos />}></Route>
+                <Route path="jugos" element={<Jugos />}></Route>
+              </Route>
             </Route>
             <Route path="/contacto" element={<Contacto />}></Route>
             <Route path="*" element={<PaginaNoEncontrada />}></Route>

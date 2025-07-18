@@ -3,7 +3,7 @@ import type { SubmenuInterface } from "../interfaces/interface";
 export const dataSubmenu: SubmenuInterface[] = [
   {
     id: 1,
-    nombre: "Racione",
+    nombre: "Raciones",
     url: ".",
   },
   { id: 2, nombre: "Entrantes", url: "entrantes" },
@@ -11,4 +11,5 @@ export const dataSubmenu: SubmenuInterface[] = [
   { id: 4, nombre: "Caldos y Sopas", url: "sopas" },
   { id: 5, nombre: "Ensaladas", url: "ensaladas" },
   { id: 6, nombre: "Bebidas", url: "bebidas" },
+  { id: 7, nombre: "Bebidas Naturales", url: "bebidasnaturales" },
 ];
